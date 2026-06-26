@@ -107,7 +107,7 @@ function getTemplateHTML(tree, searchIndex, pageContents) {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>개인 지식 아카이브 (Personal Wiki: Music, HiFi & DIY)</title>
+    <title>하이파이 오디오, 프로덕션 & 자작 개인 위키 (HiFi Audio, Production & DIY Personal Wiki)</title>
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -315,6 +315,11 @@ function getTemplateHTML(tree, searchIndex, pageContents) {
             overflow: hidden;
             text-overflow: ellipsis;
             white-space: nowrap;
+        }
+
+        .folder-title svg,
+        .menu-item svg {
+            flex-shrink: 0;
         }
 
         .chevron {
@@ -652,48 +657,28 @@ function getTemplateHTML(tree, searchIndex, pageContents) {
         <div class="content-container">
             <article class="wiki-content" id="wikiContent">
                 <!-- Welcome/Home Page -->
-                <h1>📓 개인 지식 위키 (Personal Wiki)</h1>
+                <h1>🎧 하이파이 오디오, 프로덕션 & 자작 개인 위키 (HiFi Audio, Production & DIY Personal Wiki)</h1>
                 <p>음악 감상, 하이파이 오디오 기기 정보, 다양한 하드웨어 자작(DIY) 및 모딩, 그리고 관련 소프트웨어 및 네트워크 서버 환경을 체계적으로 수집하고 정리한 개인 지식 아카이브입니다.</p>
                 
                 <hr>
                 
                 <h2>📂 카테고리 바로가기</h2>
                 <div class="welcome-grid">
-                    <a href="#1_drivers_technology/INDEX.md" class="welcome-card">
-                        <h3>🧬 오디오 기술 & 드라이버</h3>
-                        <p>DD, BA, 평판형, 정전형, MEMS 등 하드웨어 드라이버 구조와 핵심 부품 신소재 정보.</p>
+                    <a href="#1_hifi_audio/INDEX.md" class="welcome-card">
+                        <h3>🎧 HiFi 오디오</h3>
+                        <p>IEM(이어폰), 헤드폰, 재생 기기, 오디오 기술(드라이버/포맷/프로토콜/스트리밍) 및 음향 물리 이론, 청음 평가 등을 다룹니다.</p>
                     </a>
-                    <a href="#2_earphones_headphones/INDEX.md" class="welcome-card">
-                        <h3>🎧 이어폰 & 헤드폰</h3>
-                        <p>수월우, 탕주, 심고트 등 단일 드라이버 IEM부터 슈어 KSE1500 정전형 시스템 비교 분석.</p>
+                    <a href="#2_recording_production/INDEX.md" class="welcome-card">
+                        <h3>🎙️ 레코딩 및 프로덕션</h3>
+                        <p>레코더, 시퀀서, 샘플러 등 녹음·제작 하드웨어와 DAW, 트래커, 모듈러, 샘플러 소프트웨어 및 가상 EQ 라우팅 설정을 다룹니다.</p>
                     </a>
-                    <a href="#3_dap_dac_interfaces/INDEX.md" class="welcome-card">
-                        <h3>🎛️ DAP & DAC / 인터페이스</h3>
-                        <p>FiiO M21, iPod 세대별 특징 및 MOTU M2 등 고밀도 DAC 칩셋의 음질 시그니처.</p>
+                    <a href="#3_music_appreciation/INDEX.md" class="welcome-card">
+                        <h3>🎵 음악 감상</h3>
+                        <p>다양한 음악 장르 분석, IDM 및 앰비언트 가이드, 추천 앨범 리뷰와 아티스트의 음악적 발취를 깊이 있게 탐구합니다.</p>
                     </a>
-                    <a href="#4_recording_sampling/INDEX.md" class="welcome-card">
-                        <h3>🎙️ 레코딩 & 샘플러</h3>
-                        <p>Tascam, Zoom 등의 32-bit Float 필드 레코더 및 SP-404, Digitakt II 등 포터블 작곡 머신.</p>
-                    </a>
-                    <a href="#5_software_apps/INDEX.md" class="welcome-card">
-                        <h3>💻 소프트웨어 & 네트워크</h3>
-                        <p>UAPP, 뉴트론 등 오디오 플레이어 설정 및 Navidrome + Tailscale 맥북 홈서버 스트리밍 구축법.</p>
-                    </a>
-                    <a href="#6_formats_protocols/INDEX.md" class="welcome-card">
-                        <h3>📡 음원 포맷 & 통신 규격</h3>
-                        <p>32-bit Float, DSD 포맷 설명, 비트 퍼펙트 출력 달성법 및 원격 스트리밍 규격 가이드.</p>
-                    </a>
-                    <a href="#7_accessories_terms/INDEX.md" class="welcome-card">
-                        <h3>🏷️ 액세서리 & 음향 용어</h3>
-                        <p>이어팁 가이드(디비누스 벨벳 팁 등) 및 지터, 마스킹, 치찰음 등 음향 물리 용어 사전.</p>
-                    </a>
-                    <a href="#8_music_genres_artists/INDEX.md" class="welcome-card">
-                        <h3>🎵 음악 장르 & 아티스트</h3>
-                        <p>장르별 음악 분석(IDM, Ambient 등), 앨범 감상평 및 개인 소장 추천 아티스트 정보.</p>
-                    </a>
-                    <a href="#9_diy_hardware_modding/INDEX.md" class="welcome-card">
-                        <h3>🛠️ DIY & 하드웨어 개조</h3>
-                        <p>아이팟 SSD 모딩, iMod 납땜 개조, 황동 동록 제거 및 장비 자작 프로젝트 기록.</p>
+                    <a href="#4_diy/INDEX.md" class="welcome-card">
+                        <h3>🛠️ DIY</h3>
+                        <p>아이팟 하드웨어 개조 및 관리법을 포함하여 커스텀 키보드 빌드, MYOG(기어 자작) 등 다양한 자작 프로젝트를 기록합니다.</p>
                     </a>
                 </div>
             </article>
@@ -763,6 +748,43 @@ function getTemplateHTML(tree, searchIndex, pageContents) {
             }
         }
 
+        var koreanNames = {
+            '1_hifi_audio': '🎧 하이파이 오디오 (HiFi Audio)',
+            '2_recording_production': '🎙️ 레코딩 및 프로덕션 (Recording & Production)',
+            '3_music_appreciation': '🎵 음악 감상 (Music Appreciation)',
+            '4_diy': '🛠️ 자작 (DIY)',
+            '1_1_iem': '인이어 이어폰 (IEM)',
+            '1_2_headphones': '헤드폰 (Headphones)',
+            '1_3_source_devices': '재생 기기 (Playback Devices)',
+            '1_4_audio_technology': '오디오 기술 (Audio Technology)',
+            '1_5_acoustics_evaluation': '음향 이론 및 청음 평가 (Acoustics & Evaluation)',
+            '2_1_recorders': '레코더 (Recorders)',
+            '2_2_sequencers': '시퀀서 (Sequencers)',
+            '2_3_samplers': '샘플러 (Samplers)',
+            '2_4_daws': 'DAW (DAWs)',
+            '2_5_trackers': '트래커 (Trackers)',
+            '2_6_modulars': '모듈러 (Modulars)',
+            '2_7_samplers_software': '샘플러 (Samplers)',
+            '2_8_system_routing_eq': '시스템 라우팅 및 EQ (System Routing & EQ)',
+            '3_1_genres_artists': '장르 및 아티스트 분석 (Genres & Artists)',
+            '4_1_hardware_modding': '하드웨어 개조 (Hardware Modding)',
+            '4_2_maintenance_accessories': '유지 보수 및 액세서리 (Maintenance & Accessories)',
+            '1_3_1_dap': '디지털 오디오 플레이어 (DAP)',
+            '1_3_2_dac_chips': 'DAC 칩셋 (DAC Chips)',
+            '1_3_3_audio_interfaces': '오디오 인터페이스 (Audio Interfaces)',
+            '1_4_1_drivers_materials': '드라이버 기술 및 진동판 소재 (Drivers & Materials)',
+            '1_4_2_digital_formats': '디지털 음원 포맷 및 데이터 (Digital Formats)',
+            '1_4_3_protocols': '전송 프로토콜 및 규격 (Protocols)',
+            '1_4_4_server_streaming': '개인 음악 서버 및 스트리밍 (Server & Streaming)',
+            '1_4_5_playback_apps': '재생 소프트웨어 및 플레이어 앱 (Playback Apps)',
+            '1_5_1_physics_terms': '음향 물리 현상 용어 (Physics Terms)',
+            '1_5_2_test_tracks': '청음 평가용 테스트 트랙 (Test Tracks)',
+            '3_1_1_reviews': '음악 리뷰 및 인덱스 (Reviews)',
+            '4_1_1_ipod_mods': '아이팟 개조 가이드 (iPod Mods)',
+            '4_2_1_gear_care': '장비 관리 및 세척 가이드 (Gear Care)',
+            '4_2_2_accessories': '음향 피팅 및 액세서리 (Accessories)'
+        };
+
         // Render Sidebar Menu Nodes
         function renderNavigation(tree, container) {
             if (!container) container = document.getElementById('sidebarContent');
@@ -786,8 +808,10 @@ function getTemplateHTML(tree, searchIndex, pageContents) {
                     // Folder Title
                     var title = document.createElement('span');
                     title.className = 'folder-title';
-                    var displayFolderName = node.name.replace(/^[0-9]+_/, '').replace(/_/g, ' ');
-                    displayFolderName = displayFolderName.charAt(0).toUpperCase() + displayFolderName.slice(1);
+                    var displayFolderName = koreanNames[node.name] || node.name.replace(/^[0-9]+_/, '').replace(/_/g, ' ');
+                    if (!koreanNames[node.name]) {
+                        displayFolderName = displayFolderName.charAt(0).toUpperCase() + displayFolderName.slice(1);
+                    }
                     title.innerHTML = '<svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg> <span>' + displayFolderName + '</span>';
                     
                     header.appendChild(chevron);
@@ -861,6 +885,7 @@ function getTemplateHTML(tree, searchIndex, pageContents) {
 
         // Render Markdown Page Content
         function loadPage(pagePath) {
+            pagePath = decodeURIComponent(pagePath);
             // Update active menu state (files)
             document.querySelectorAll('.menu-item').forEach(function(item) {
                 if (item.dataset.path === pagePath) {
