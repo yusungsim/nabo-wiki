@@ -4,12 +4,12 @@
 
 ---
 
-| 분류 | 기기명 | 세부 사양 / 드라이버 구조 | 링크 |
-| :--- | :--- | :--- | :--- |
-| **재생 기기 (DAP)** | FiiO M21 | 포터블 디지털 오디오 플레이어 | [FiiO M21](1_3_source_devices/1_3_1_dap/FiiO_M21.md) |
-| **재생 기기 (Interface)** | MOTU M2 | ESS DAC 탑재 USB 오디오 인터페이스 | [MOTU M2](1_3_source_devices/1_3_3_audio_interfaces/MOTU_M2.md) |
-| **인이어 이어폰 (IEM)** | 수월우 츄 2 (Moondrop Chu II) | 10mm Al-Mg 합금 돔 다이내믹 드라이버 (1 DD) | [Moondrop Chu II](1_1_iem/Moondrop_Chu_2.md) |
-| **인이어 이어폰 (IEM)** | TRN 캐러벨 (TRN Caravel) | 10mm 유리 돔 DD + 6mm 2세대 평판형 하이브리드 | [TRN Caravel](1_1_iem/TRN_Caravel.md) |
-| **인이어 이어폰 (IEM)** | 키위이어스 오케스트라 2 (Kiwi Ears Orchestra II) | 10 Balanced Armature & 4-Way 크로스오버 (10 BA) | [Kiwi Ears Orchestra II](1_1_iem/Kiwi_Ears_Orchestra.md) |
-| **헤드폰 (Headphones)** | 필립스 SHP9500 (Philips SHP9500) | 50mm 대구경 네오디뮴 다이내믹 드라이버 (오픈형) | [Philips SHP9500](1_2_headphones/Philips_SHP9500.md) |
+| 분류 | 기기명 | 세부 사양 / 드라이버 구조 |
+| :--- | :--- | :--- |
+| **재생 기기 (DAP)** | [FiiO M21](1_3_source_devices/1_3_1_dap/FiiO_M21.md) | 포터블 디지털 오디오 플레이어 |
+| **재생 기기 (Interface)** | [MOTU M2](1_3_source_devices/1_3_3_audio_interfaces/MOTU_M2.md) | ESS DAC 탑재 USB 오디오 인터페이스 |
+| **인이어 이어폰 (IEM)** | [수월우 츄 2 (Moondrop Chu II)](1_1_iem/Moondrop_Chu_2.md) | 10mm Al-Mg 합금 돔 다이내믹 드라이버 (1 DD) |
+| **인이어 이어폰 (IEM)** | [TRN 캐러벨 (TRN Caravel)](1_1_iem/TRN_Caravel.md) | 10mm 유리 돔 DD + 6mm 2세대 평판형 하이브리드 |
+| **인이어 이어폰 (IEM)** | [키위이어스 오케스트라 2 (Kiwi Ears Orchestra II)](1_1_iem/Kiwi_Ears_Orchestra.md) | 10 Balanced Armature & 4-Way 크로스오버 (10 BA) |
+| **헤드폰 (Headphones)** | [필립스 SHP9500 (Philips SHP9500)](1_2_headphones/Philips_SHP9500.md) | 50mm 대구경 네오디뮴 다이내믹 드라이버 (오픈형) |
 

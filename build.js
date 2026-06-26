@@ -400,7 +400,7 @@ function getTemplateHTML(tree, searchIndex, pageContents) {
         }
 
         .content-container {
-            max-width: 840px;
+            max-width: 1000px;
             width: 100%;
             margin: 0 auto;
             padding: 64px 32px;
@@ -416,6 +416,31 @@ function getTemplateHTML(tree, searchIndex, pageContents) {
         .wiki-content {
             line-height: 1.7;
             font-size: 1.05rem;
+        }
+
+        /* Table Styling */
+        .wiki-content table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 24px 0;
+            font-size: 0.95rem;
+            border: 1px solid rgba(255, 255, 255, 0.15);
+        }
+
+        .wiki-content th, .wiki-content td {
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            padding: 12px 16px;
+            text-align: left;
+        }
+
+        .wiki-content th {
+            background-color: var(--bg-card);
+            font-weight: 600;
+            color: var(--text-main);
+        }
+
+        .wiki-content tr:nth-child(even) {
+            background-color: rgba(255, 255, 255, 0.02);
         }
 
         .wiki-content h1 {
