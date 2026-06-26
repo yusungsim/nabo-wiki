@@ -1,0 +1,25 @@
+# 🏷️ 액세서리 및 음향 용어 (Accessories & Audio Terms)
+
+IEM의 물리적 밀착을 도와 성향을 조정하는 이어팁 정보 및 소리 음색의 고저를 평가하고 장비 특이점을 묘사하는 전문 지식 단어 인덱스입니다.
+
+---
+
+## 🗂️ 세부 항목 목차
+
+### 1. 음향 액세서리
+* [디비누스 벨벳 팁 (일반형 / 와이드보어)](accessories/Divinus_Velvet_Tips.md) - 무광 엠보싱 텍스처로 끈적임이 없고 이압을 덜어주며, 고음의 피크를 다듬는 일반형과 고음 개방감/스테이징 공간을 늘리는 와이드보어형 효과.
+
+### 2. 오디오 물리 및 평가 용어 (Audio Phenomena)
+* [트랜지언트 (과도 응답)](audio_phenomena_terms/Transient.md) - 드럼 타격이나 현을 튕기는 첫 순간 소리가 튀어오르는 어택감 반응 속도로, 빠를수록 칼같은 고해상도를 내고 느릴수록 포근한 잔향감을 형성함.
+* [분할 진동 (Cone Breakup)](audio_phenomena_terms/Breakup.md) - 진동판 강성 한계로 표면이 부분적으로 따로 꺾여 고음 대역에 왜곡 피크를 형성하는 불량 물리 성질과 고강도 베릴륨/DLC 진동판 대책.
+* [마스킹 현상](audio_phenomena_terms/Masking.md) - 주파수가 가깝고 더 강한 저음에 덮여(Masking) 중고역대 보컬이나 악기 소리가 먹먹하게 들리지 않는 달팽이관 심리음향 현상.
+* [클리핑 (Clipping)](audio_phenomena_terms/Clipping.md) - 한계 전압/수치를 초과하여 아날로그/디지털 파형의 위아래가 싹둑 잘리는 일그러짐 노이즈 현상.
+* [지터 (Jitter)](audio_phenomena_terms/Jitter.md) - 오디오 신호 타이밍 클럭의 미세 시간축 오차 흔들림으로, 고정밀 펨토 클럭 셋업 등을 통해 지터를 없애야 입체감 정위상이 살아나는 특징.
+* [양자화 노이즈 (계단 오차)](audio_phenomena_terms/Quantization_Noise.md) - 연속적 파형을 정수로 매칭하는 계단 반올림 오차로, 비트 깊이(16비트->24비트)를 늘려 감쇄할 수 있는 무음 바닥 노이즈.
+* [치찰음 (보컬 자극)](audio_phenomena_terms/Sibilance.md) - 보컬 자음(ㅅ, ㅈ, ㅊ 등) 발음 시 4kHz~8kHz 대역이 쇠 소리처럼 귀를 찔러 두통을 유발하는 현상과 튜닝 적정선.
+* [다이내믹 레인지 (Dynamic Range)](audio_phenomena_terms/Dynamic_Range.md) - 기기가 다룰 수 있는 가장 작은 소리(잡음 바닥)부터 찌그러짐 바로 직전의 가장 큰 폭발음까지의 dB 스케일 차이.
+
+### 3. 기타 음향 및 개조 용어
+* [음질 평가용 테스트 트랙 (Test Tracks)](other_terms/Test_Tracks_Evaluation.md) - 하만 타겟 연구(Fast Car), EBU SQAM CD(글로켄슈필 댐핑 테스트), 리뷰어 레퍼런스, 저음/중음/고음/입체 공간감 벤치마크 및 장르 시너지 판별법.
+* [듀얼 ADC](other_terms/Dual_ADC.md) - 작은 소리용 고감도 칩과 큰 비명 소리용 저감도 칩을 이중 배치하여 32비트 부동소수점 클리핑 프리 수음을 달성하는 레코더 마더보드 회로 기법.
+
