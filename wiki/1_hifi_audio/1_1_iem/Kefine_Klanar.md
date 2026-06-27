@@ -1,3 +1,6 @@
+---
+title: "케파인 클랜시 (Kefine Klanar)"
+---
 # 케파인 클랜시 (Kefine Klanar)
 
 ## 사양 및 구조

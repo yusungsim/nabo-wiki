@@ -1,3 +1,6 @@
+---
+title: "마스킹 현상 (Masking Effect)"
+---
 # 마스킹 현상 (Masking Effect)
 
 ## 개요 및 발생 메커니즘

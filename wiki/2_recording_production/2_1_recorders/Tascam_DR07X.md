@@ -1,3 +1,6 @@
+---
+title: "타스캠 DR-07X / DR-07XP (Tascam DR-07X / DR-07XP)"
+---
 # 타스캠 DR-07X / DR-07XP (Tascam DR-07X / DR-07XP)
 
 ## 라인업 비교 및 핵심 차이

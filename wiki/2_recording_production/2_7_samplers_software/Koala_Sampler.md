@@ -1,3 +1,6 @@
+---
+title: "코알라 샘플러 (Koala Sampler)"
+---
 # 코알라 샘플러 (Koala Sampler)
 
 ## 개요

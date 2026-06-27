@@ -1,3 +1,6 @@
+---
+title: "MOTU M2"
+---
 # MOTU M2
 
 ## 개요

@@ -1,3 +1,6 @@
+---
+title: "SMB (Samba v2 & v3)"
+---
 # SMB (Samba v2 & v3)
 
 ## 개요

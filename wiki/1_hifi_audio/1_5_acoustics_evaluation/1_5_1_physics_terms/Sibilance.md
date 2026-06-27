@@ -1,3 +1,6 @@
+---
+title: "치찰음 (Sibilance)"
+---
 # 치찰음 (Sibilance)
 
 ## 개요 및 주파수 특징

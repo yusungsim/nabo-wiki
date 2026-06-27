@@ -1,3 +1,6 @@
+---
+title: "탕주 부두 (Tangzu Fudu Verse 1)"
+---
 # 탕주 부두 (Tangzu Fudu Verse 1)
 
 ## 사양 및 구조

@@ -1,3 +1,6 @@
+---
+title: "동록 / 녹청 (Verdigris)"
+---
 # 동록 / 녹청 (Verdigris)
 
 ## 발생 현상

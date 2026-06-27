@@ -1,3 +1,6 @@
+---
+title: "양자화 노이즈 (Quantization Noise)"
+---
 # 양자화 노이즈 (Quantization Noise)
 
 ## 개요 및 수학적 정의

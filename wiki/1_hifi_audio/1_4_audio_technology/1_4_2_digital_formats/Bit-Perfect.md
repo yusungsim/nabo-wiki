@@ -1,3 +1,6 @@
+---
+title: "비트 퍼펙트 (Bit-Perfect)"
+---
 # 비트 퍼펙트 (Bit-Perfect)
 
 ## 개요

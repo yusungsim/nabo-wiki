@@ -1,3 +1,6 @@
+---
+title: "사운드소스 (SoundSource)"
+---
 # 사운드소스 (SoundSource)
 
 ## 개요

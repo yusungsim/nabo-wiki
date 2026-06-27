@@ -1,3 +1,6 @@
+---
+title: "탕주 상관완아 (Tangzu Wan'er S.G.)"
+---
 # 탕주 상관완아 (Tangzu Wan'er S.G.)
 
 ## 사양 및 구조

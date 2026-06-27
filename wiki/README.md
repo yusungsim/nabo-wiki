@@ -1,3 +1,6 @@
+---
+title: "🎧 HiFi Audio, Production & DIY Personal Wiki"
+---
 # 🎧 HiFi Audio, Production & DIY Personal Wiki
 
 이 위키는 **HiFi 오디오 기기, 레코딩/프로덕션, 음악 감상, DIY 하드웨어 개조** 등 음향 및 제작과 관련된 연구 자료와 경험을 정리하는 개인 지식 위키(Zettelkasten)입니다.

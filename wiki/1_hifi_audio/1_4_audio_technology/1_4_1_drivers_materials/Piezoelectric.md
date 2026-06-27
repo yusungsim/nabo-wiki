@@ -1,3 +1,6 @@
+---
+title: "피에조 전기 세라믹 (Piezoelectric - PZT)"
+---
 # 피에조 전기 세라믹 (Piezoelectric - PZT)
 
 ## ⚡ PZT의 의미와 작동 원리

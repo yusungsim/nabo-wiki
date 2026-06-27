@@ -1,3 +1,6 @@
+---
+title: "틴에이지 엔지니어링 EP-133 K.O. II (Teenage Engineering EP-133 K.O. II)"
+---
 # 틴에이지 엔지니어링 EP-133 K.O. II (Teenage Engineering EP-133 K.O. II)
 
 ## 개요

@@ -1,3 +1,6 @@
+---
+title: "평판형 자계 (Planar Magnetic)"
+---
 # 평판형 자계 (Planar Magnetic)
 
 ## 개요

@@ -1,3 +1,6 @@
+---
+title: "일렉트론 디지탁트 II (Elektron Digitakt II)"
+---
 # 일렉트론 디지탁트 II (Elektron Digitakt II)
 
 ## 개요

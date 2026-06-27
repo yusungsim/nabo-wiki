@@ -1,3 +1,6 @@
+---
+title: "리노이즈 (Renoise)"
+---
 # 리노이즈 (Renoise)
 
 ## 개요

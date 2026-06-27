@@ -1,3 +1,6 @@
+---
+title: "심고트 EG280 (Simgot EG280)"
+---
 # 심고트 EG280 (Simgot EG280)
 
 ## 사양 및 구조

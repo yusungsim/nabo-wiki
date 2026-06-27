@@ -1,3 +1,6 @@
+---
+title: "아카이 MPC 소프트웨어 (Akai MPC Software)"
+---
 # 아카이 MPC 소프트웨어 (Akai MPC Software)
 
 ## 개요

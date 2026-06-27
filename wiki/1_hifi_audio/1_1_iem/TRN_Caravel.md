@@ -1,6 +1,9 @@
+---
+title: TRN 캐러벨 (TRN Caravel)
+---
 # TRN 캐러벨 (TRN Caravel)
 
-![TRN 캐러벨](/wiki/assets/trn-caraver-260627.jpg)
+![TRN 캐러벨 (TRN Caravel) 이어폰 유닛 및 4.4mm 기본 번들 케이블](/wiki/assets/trn-caraver-260627.jpg)
 
 ## 사양 및 구조
 * **드라이버**: 1DD + 1Planar 하이브리드 구성

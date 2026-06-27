@@ -1,3 +1,6 @@
+---
+title: "다운샘플링 & 리샘플링 (Downsampling / Resampling)"
+---
 # 다운샘플링 & 리샘플링 (Downsampling / Resampling)
 
 ## 상세 개념 및 음향적 차이

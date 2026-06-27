@@ -1,3 +1,6 @@
+---
+title: "나이스에이치씨케이 F1 Pro (NiceHCK F1 Pro)"
+---
 # 나이스에이치씨케이 F1 Pro (NiceHCK F1 Pro)
 
 ## 사양 및 구조

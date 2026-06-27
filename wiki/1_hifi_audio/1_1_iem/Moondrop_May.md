@@ -1,3 +1,6 @@
+---
+title: "수월우 메이 (Moondrop May)"
+---
 # 수월우 메이 (Moondrop May)
 
 ## 사양 및 구조

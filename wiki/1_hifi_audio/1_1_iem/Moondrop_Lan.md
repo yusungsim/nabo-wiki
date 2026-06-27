@@ -1,3 +1,6 @@
+---
+title: "수월우 란 (Moondrop Lan)"
+---
 # 수월우 란 (Moondrop Lan)
 
 ## 사양 및 구조

@@ -1,3 +1,6 @@
+---
+title: "SFTP (Secure File Transfer Protocol)"
+---
 # SFTP (Secure File Transfer Protocol)
 
 ## 개요

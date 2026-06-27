@@ -1,3 +1,6 @@
+---
+title: "골전도 (Bone Conduction - BCD)"
+---
 # 골전도 (Bone Conduction - BCD)
 
 ## 개요

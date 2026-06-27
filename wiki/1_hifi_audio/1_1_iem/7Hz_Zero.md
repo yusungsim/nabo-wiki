@@ -1,3 +1,6 @@
+---
+title: "7Hz 제로 / 제로 2 (7Hz Salnotes Zero / Zero 2)"
+---
 # 7Hz 제로 / 제로 2 (7Hz Salnotes Zero / Zero 2)
 
 ## 사양 및 구조

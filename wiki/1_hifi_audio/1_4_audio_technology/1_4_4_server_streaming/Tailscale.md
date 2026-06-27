@@ -1,3 +1,6 @@
+---
+title: "테일스케일 (Tailscale)"
+---
 # 테일스케일 (Tailscale)
 
 ## 개요

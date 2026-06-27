@@ -1,3 +1,6 @@
+---
+title: "듀얼 ADC (Dual ADC)"
+---
 # 듀얼 ADC (Dual ADC)
 
 ## 개요 및 작동 원리

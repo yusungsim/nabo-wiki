@@ -1,3 +1,6 @@
+---
+title: "필립스 SHP9500 (Philips SHP9500)"
+---
 # 필립스 SHP9500 (Philips SHP9500)
 
 ## 사양 및 구조

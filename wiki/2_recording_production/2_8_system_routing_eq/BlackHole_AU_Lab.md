@@ -1,3 +1,6 @@
+---
+title: "BlackHole + AU Lab"
+---
 # BlackHole + AU Lab
 
 ## 개요 및 조합 배경

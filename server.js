@@ -28,8 +28,25 @@ function getWikiTree(dir, relativeDir = '') {
         } else if (item.endsWith('.md')) {
             // Get clean name for display
             let cleanName = item.replace('.md', '').replace(/_/g, ' ');
+            let displayName = cleanName;
+
+            try {
+                const fileContent = fs.readFileSync(fullPath, 'utf8');
+                const frontmatterRegex = /^---\r?\n([\s\S]+?)\r?\n---/;
+                const match = fileContent.match(frontmatterRegex);
+                if (match) {
+                    const yamlContent = match[1];
+                    const titleMatch = yamlContent.match(/title:\s*(.+)/);
+                    if (titleMatch) {
+                        displayName = titleMatch[1].trim().replace(/^['"]|['"]$/g, '');
+                    }
+                }
+            } catch (err) {
+                // Fallback to cleanName
+            }
+
             tree.push({
-                name: cleanName,
+                name: displayName,
                 fileName: item,
                 type: 'file',
                 path: relPath

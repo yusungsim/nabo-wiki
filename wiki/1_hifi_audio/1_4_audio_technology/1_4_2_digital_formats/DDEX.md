@@ -1,3 +1,6 @@
+---
+title: "DDEX (Digital Data Exchange) 및 업계 배포 표준"
+---
 # DDEX (Digital Data Exchange) 및 업계 배포 표준
 
 ## 개요

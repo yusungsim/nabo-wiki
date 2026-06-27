@@ -1,3 +1,6 @@
+---
+title: "롤랜드 AIRA Compact P-6 (Roland P-6)"
+---
 # 롤랜드 AIRA Compact P-6 (Roland P-6)
 
 ## 개요

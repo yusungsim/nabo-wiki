@@ -1,3 +1,6 @@
+---
+title: "디지털 음원 포맷 및 데이터 (Digital Formats)"
+---
 # 디지털 음원 포맷 및 데이터 (Digital Formats)
 
 이 페이지는 **디지털 음원 포맷 및 데이터 (Digital Formats)**와(과) 관련된 위키 개념 페이지와 하위 카테고리 목록입니다.

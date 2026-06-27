@@ -1,3 +1,6 @@
+---
+title: "IDM & 앰비언트 일렉트로닉 가이드 (IDM & Ambient)"
+---
 # IDM & 앰비언트 일렉트로닉 가이드 (IDM & Ambient)
 
 ## IDM (Intelligent Dance Music) 이란?

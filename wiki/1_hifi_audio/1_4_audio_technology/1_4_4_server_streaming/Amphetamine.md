@@ -1,3 +1,6 @@
+---
+title: "앰페타민 (Amphetamine)"
+---
 # 앰페타민 (Amphetamine)
 
 ## 개요

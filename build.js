@@ -26,8 +26,25 @@ function getWikiTree(dir, relativeDir = '') {
             });
         } else if (item.endsWith('.md')) {
             let cleanName = item.replace('.md', '').replace(/_/g, ' ');
+            let displayName = cleanName;
+            
+            try {
+                const fileContent = fs.readFileSync(fullPath, 'utf8');
+                const frontmatterRegex = /^---\r?\n([\s\S]+?)\r?\n---/;
+                const match = fileContent.match(frontmatterRegex);
+                if (match) {
+                    const yamlContent = match[1];
+                    const titleMatch = yamlContent.match(/title:\s*(.+)/);
+                    if (titleMatch) {
+                        displayName = titleMatch[1].trim().replace(/^['"]|['"]$/g, '');
+                    }
+                }
+            } catch (err) {
+                // Fallback to cleanName
+            }
+
             tree.push({
-                name: cleanName,
+                name: displayName,
                 fileName: item,
                 type: 'file',
                 path: relPath
@@ -573,6 +590,16 @@ function getTemplateHTML(tree, searchIndex, pageContents) {
             box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
         }
 
+        .wiki-content .image-caption {
+            display: block;
+            text-align: center;
+            font-size: 0.82rem;
+            color: var(--text-muted);
+            margin-top: -16px;
+            margin-bottom: 24px;
+            font-style: italic;
+        }
+
         /* Search Results Overlay */
         .search-results {
             display: none;
@@ -1025,11 +1052,9 @@ function getTemplateHTML(tree, searchIndex, pageContents) {
                         // 1. If it's a fixed path /wiki/assets/... in offline mode, rewrite to relative wiki/assets/...
                         if (isOffline && src.indexOf('/wiki/assets/') === 0) {
                             img.src = src.substring(1); // remove leading '/' -> 'wiki/assets/...'
-                            return;
                         }
-
                         // 2. If it's a local relative image, resolve relative path according to the current markdown file location
-                        if (src.indexOf('http') === -1 && src.indexOf('://') === -1 && src.indexOf('/') !== 0 && src.indexOf('data:') !== 0) {
+                        else if (src.indexOf('http') === -1 && src.indexOf('://') === -1 && src.indexOf('/') !== 0 && src.indexOf('data:') !== 0) {
                             var currentFolder = pagePath.substring(0, pagePath.lastIndexOf('/'));
                             var targetPath = '';
                             if (src.indexOf('./') === 0) {
@@ -1053,6 +1078,18 @@ function getTemplateHTML(tree, searchIndex, pageContents) {
                             
                             // Prefix with "wiki/" because the assets live inside the wiki/ directory
                             img.src = 'wiki/' + targetPath;
+                        }
+
+                        // 3. Add visual caption from Alt attribute if it exists and is not empty
+                        var altText = img.getAttribute('alt');
+                        if (altText && altText.trim() !== '') {
+                            var nextNode = img.nextSibling;
+                            if (!nextNode || !nextNode.classList || !nextNode.classList.contains('image-caption')) {
+                                var caption = document.createElement('span');
+                                caption.className = 'image-caption';
+                                caption.innerText = altText;
+                                img.parentNode.insertBefore(caption, img.nextSibling);
+                            }
                         }
                     });
 

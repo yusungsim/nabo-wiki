@@ -1,3 +1,6 @@
+---
+title: "듀얼 마그네틱 회로 (Dual Magnetic Circuit)"
+---
 # 듀얼 마그네틱 회로 (Dual Magnetic Circuit)
 
 ## 개요

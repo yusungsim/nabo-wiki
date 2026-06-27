@@ -1,3 +1,6 @@
+---
+title: "플렉스앰프 (Plexamp)"
+---
 # 플렉스앰프 (Plexamp)
 
 ## 개요

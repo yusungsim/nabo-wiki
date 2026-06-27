@@ -1,3 +1,6 @@
+---
+title: "디비누스 벨벳 팁 (Divinus Velvet Tips)"
+---
 # 디비누스 벨벳 팁 (Divinus Velvet Tips)
 
 ## 개요

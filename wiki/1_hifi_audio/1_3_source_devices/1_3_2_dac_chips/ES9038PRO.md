@@ -1,3 +1,6 @@
+---
+title: "ESS Sabre 계열 (ES9016S / ES9026PRO / ES9038PRO)"
+---
 # ESS Sabre 계열 (ES9016S / ES9026PRO / ES9038PRO)
 
 ## 개요 및 특징

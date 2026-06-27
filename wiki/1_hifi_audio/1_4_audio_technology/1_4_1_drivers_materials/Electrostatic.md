@@ -1,3 +1,6 @@
+---
+title: "정전형 (Electrostatic - EST)"
+---
 # 정전형 (Electrostatic - EST)
 
 ## 개요

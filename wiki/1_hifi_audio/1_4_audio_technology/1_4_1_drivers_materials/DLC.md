@@ -1,3 +1,6 @@
+---
+title: "DLC (Diamond-Like Carbon) 진동판"
+---
 # DLC (Diamond-Like Carbon) 진동판
 
 ## 💎 DLC Diaphragm Dynamic Driver IEM의 의미

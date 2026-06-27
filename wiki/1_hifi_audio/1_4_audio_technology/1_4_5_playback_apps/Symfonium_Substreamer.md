@@ -1,3 +1,6 @@
+---
+title: "심포니엄 (Symfonium) / Substreamer"
+---
 # 심포니엄 (Symfonium) / Substreamer
 
 ## 기종별 역할 및 특징

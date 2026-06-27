@@ -1,3 +1,6 @@
+---
+title: "음향 이론 및 청음 평가 (Acoustics & Evaluation)"
+---
 # 음향 이론 및 청음 평가 (Acoustics & Evaluation)
 
 이 페이지는 **음향 이론 및 청음 평가 (Acoustics & Evaluation)**와(과) 관련된 위키 개념 페이지와 하위 카테고리 목록입니다.

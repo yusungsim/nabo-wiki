@@ -1,3 +1,6 @@
+---
+title: "eqMac"
+---
 # eqMac
 
 ## 개요

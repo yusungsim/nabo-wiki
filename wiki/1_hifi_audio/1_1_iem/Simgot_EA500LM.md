@@ -1,3 +1,6 @@
+---
+title: "심고트 EA500LM (Simgot EA500LM)"
+---
 # 심고트 EA500LM (Simgot EA500LM)
 
 ## 사양 및 구조

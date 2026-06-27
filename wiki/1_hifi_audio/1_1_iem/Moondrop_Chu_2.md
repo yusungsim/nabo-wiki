@@ -1,3 +1,6 @@
+---
+title: "수월우 츄 2 (Moondrop Chu II)"
+---
 # 수월우 츄 2 (Moondrop Chu II)
 
 ## 사양 및 구조

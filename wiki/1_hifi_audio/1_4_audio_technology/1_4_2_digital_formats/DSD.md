@@ -1,3 +1,6 @@
+---
+title: "DSD (Direct Stream Digital)"
+---
 # DSD (Direct Stream Digital)
 
 ## 개요 및 작동 방식

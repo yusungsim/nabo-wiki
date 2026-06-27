@@ -1,3 +1,6 @@
+---
+title: "롤랜드 SP-404MKII (Roland SP-404MKII)"
+---
 # 롤랜드 SP-404MKII (Roland SP-404MKII)
 
 ## 개요

@@ -1,3 +1,6 @@
+---
+title: "타스캠 DR-05X / DR-05 (Tascam DR-05X / DR-05)"
+---
 # 타스캠 DR-05X / DR-05 (Tascam DR-05X / DR-05)
 
 ## 라인업 비교 및 주요 차이

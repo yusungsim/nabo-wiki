@@ -1,3 +1,6 @@
+---
+title: "다이내믹 드라이버 (Dynamic Driver - DD)"
+---
 # 다이내믹 드라이버 (Dynamic Driver - DD)
 
 ## 개요

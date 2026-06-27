@@ -1,3 +1,6 @@
+---
+title: "나비드롬 (Navidrome)"
+---
 # 나비드롬 (Navidrome)
 
 ## 개요

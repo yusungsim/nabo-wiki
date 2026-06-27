@@ -1,3 +1,6 @@
+---
+title: "USB Audio Class (UAC 2.0 / UAC 1.0)"
+---
 # USB Audio Class (UAC 2.0 / UAC 1.0)
 
 ## 규격별 전송 대역폭 및 성능 차이

@@ -1,3 +1,6 @@
+---
+title: "PCM (Pulse Code Modulation)"
+---
 # PCM (Pulse Code Modulation)
 
 ## 개요 및 샘플링 원리

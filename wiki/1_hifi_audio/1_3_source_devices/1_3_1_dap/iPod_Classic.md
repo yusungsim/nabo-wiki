@@ -1,3 +1,6 @@
+---
+title: "아이팟 클래식 (iPod Classic / Video)"
+---
 # 아이팟 클래식 (iPod Classic / Video)
 
 ## 세대별 오디오 아키텍처 및 특징

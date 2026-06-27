@@ -1,3 +1,6 @@
+---
+title: "케파인 아르나르 (Kefine Arnar)"
+---
 # 케파인 아르나르 (Kefine Arnar)
 
 ## 사양 및 구조

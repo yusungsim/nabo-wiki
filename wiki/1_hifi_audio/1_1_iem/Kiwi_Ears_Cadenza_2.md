@@ -1,3 +1,6 @@
+---
+title: "키위이어스 카덴자 2 (Kiwi Ears Cadenza II)"
+---
 # 키위이어스 카덴자 2 (Kiwi Ears Cadenza II)
 
 ## 사양 및 구조

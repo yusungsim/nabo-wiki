@@ -1,3 +1,6 @@
+---
+title: "오디오 기술 (Audio Technology)"
+---
 # 오디오 기술 (Audio Technology)
 
 이 페이지는 **오디오 기술 (Audio Technology)**와(과) 관련된 위키 개념 페이지와 하위 카테고리 목록입니다.

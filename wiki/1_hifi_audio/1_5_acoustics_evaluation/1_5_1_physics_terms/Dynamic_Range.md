@@ -1,3 +1,6 @@
+---
+title: "다이내믹 레인지 (Dynamic Range)"
+---
 # 다이내믹 레인지 (Dynamic Range)
 
 ## 개요 및 스펙 단위

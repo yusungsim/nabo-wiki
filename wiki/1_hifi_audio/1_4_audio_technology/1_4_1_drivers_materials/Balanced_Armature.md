@@ -1,3 +1,6 @@
+---
+title: "밸런스드 아마추어 (Balanced Armature - BA)"
+---
 # 밸런스드 아마추어 (Balanced Armature - BA)
 
 ## 개요

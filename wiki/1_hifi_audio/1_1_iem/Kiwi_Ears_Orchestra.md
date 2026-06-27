@@ -1,3 +1,6 @@
+---
+title: "키위이어스 오케스트라 2 / 라이트 (Kiwi Ears Orchestra II / Lite)"
+---
 # 키위이어스 오케스트라 2 / 라이트 (Kiwi Ears Orchestra II / Lite)
 
 ## 라인업 개요

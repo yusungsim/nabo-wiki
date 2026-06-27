@@ -1,3 +1,6 @@
+---
+title: "🎧 내 소유 음향 장비 목록 (My Audio Gear)"
+---
 # 🎧 내 소유 음향 장비 목록 (My Audio Gear)
 
 이 문서는 제가 보유 중인 개인 음향 기기들의 요약 목록입니다. 기기명을 클릭하면 해당 장비의 세부 아키텍처 및 튜닝 사양을 정리한 개별 위키 페이지로 이동합니다.
@@ -14,5 +17,5 @@
 | **헤드폰 (Headphones)** | [필립스 SHP9500 (Philips SHP9500)](1_2_headphones/Philips_SHP9500.md) | 50mm 대구경 네오디뮴 다이내믹 드라이버 (오픈형) |
 
 ### 보유 기기 갤러리
-![TRN 캐러벨 (TRN Caravel)](/wiki/assets/trn-caraver-260627.jpg)
+![보유 중인 TRN 캐러벨 (TRN Caravel) 하이브리드 인이어 이어폰](/wiki/assets/trn-caraver-260627.jpg)
 

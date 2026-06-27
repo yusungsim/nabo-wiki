@@ -1,3 +1,6 @@
+---
+title: "네오디뮴 마그넷 (Neodymium Magnet)"
+---
 # 네오디뮴 마그넷 (Neodymium Magnet)
 
 ## 개요

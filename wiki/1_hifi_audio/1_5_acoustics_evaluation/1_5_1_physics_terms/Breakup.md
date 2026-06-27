@@ -1,3 +1,6 @@
+---
+title: "분할 진동 (Breakup / Cone Breakup)"
+---
 # 분할 진동 (Breakup / Cone Breakup)
 
 ## 개요

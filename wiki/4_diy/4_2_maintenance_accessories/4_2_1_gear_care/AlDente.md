@@ -1,3 +1,6 @@
+---
+title: "AlDente"
+---
 # AlDente
 
 ## 개요

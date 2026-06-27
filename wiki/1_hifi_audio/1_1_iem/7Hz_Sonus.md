@@ -1,3 +1,6 @@
+---
+title: "7Hz 소너스 (7Hz Sonus)"
+---
 # 7Hz 소너스 (7Hz Sonus)
 
 ## 사양 및 구조
