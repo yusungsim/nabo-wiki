@@ -1,5 +1,7 @@
 # TRN 캐러벨 (TRN Caravel)
 
+![TRN 캐러벨](/wiki/assets/trn-caraver-260627.jpg)
+
 ## 사양 및 구조
 * **드라이버**: 1DD + 1Planar 하이브리드 구성
   * **10mm 다이내믹 드라이버 (저음 및 중음 담당)**:

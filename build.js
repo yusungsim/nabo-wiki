@@ -11,6 +11,7 @@ function getWikiTree(dir, relativeDir = '') {
 
     items.forEach(item => {
         if (item.startsWith('.')) return;
+        if (item === 'assets') return; // Skip static assets directory from sidebar tree
         
         const fullPath = path.join(dir, item);
         const relPath = path.join(relativeDir, item);
@@ -107,6 +108,10 @@ function getTemplateHTML(tree, searchIndex, pageContents) {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Prevent caching in local development -->
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
     <title>하이파이 오디오, 프로덕션 & 자작 개인 위키 (HiFi Audio, Production & DIY Personal Wiki)</title>
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -298,6 +303,20 @@ function getTemplateHTML(tree, searchIndex, pageContents) {
         .folder-header.active {
             background-color: rgba(168, 85, 247, 0.1);
             border-left: 2px solid var(--accent-purple);
+        }
+
+        .folder-header.parent-active {
+            background-color: rgba(168, 85, 247, 0.04);
+            border-left: 2px dashed rgba(168, 85, 247, 0.3);
+        }
+
+        .folder-header.parent-active .folder-title {
+            color: #fff;
+            font-weight: 600;
+        }
+
+        .folder-header.parent-active .chevron {
+            color: var(--accent-purple);
         }
 
         .folder-title {
@@ -542,6 +561,18 @@ function getTemplateHTML(tree, searchIndex, pageContents) {
             margin: 40px 0;
         }
 
+        .wiki-content img {
+            max-width: 90%;
+            max-height: 400px;
+            width: auto;
+            height: auto;
+            display: block;
+            margin: 24px auto;
+            border-radius: 8px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+        }
+
         /* Search Results Overlay */
         .search-results {
             display: none;
@@ -768,6 +799,7 @@ function getTemplateHTML(tree, searchIndex, pageContents) {
                     // Deactivate active menu items & folders
                     document.querySelectorAll('.menu-item, .folder-header').forEach(function(item) {
                         item.classList.remove('active');
+                        item.classList.remove('parent-active');
                     });
                 }, 150);
             }
@@ -908,26 +940,65 @@ function getTemplateHTML(tree, searchIndex, pageContents) {
             }
         }
 
-        // Render Markdown Page Content
-        function loadPage(pagePath) {
-            pagePath = decodeURIComponent(pagePath);
-            // Update active menu state (files)
+        // Update Sidebar highlighting & expand states based on active page
+        function updateSidebarState(pagePath) {
+            // 1. Reset all active & parent-active states
+            document.querySelectorAll('.menu-item').forEach(function(item) {
+                item.classList.remove('active');
+            });
+            document.querySelectorAll('.folder-header').forEach(function(folder) {
+                folder.classList.remove('active');
+                folder.classList.remove('parent-active');
+            });
+
+            // 2. Set current active item
+            var activeElement = null;
             document.querySelectorAll('.menu-item').forEach(function(item) {
                 if (item.dataset.path === pagePath) {
                     item.classList.add('active');
-                } else {
-                    item.classList.remove('active');
+                    activeElement = item;
                 }
             });
-
-            // Update active folder state
             document.querySelectorAll('.folder-header').forEach(function(folder) {
                 if (folder.dataset.path === pagePath) {
                     folder.classList.add('active');
-                } else {
-                    folder.classList.remove('active');
+                    activeElement = folder;
                 }
             });
+
+            // 3. Auto-expand parent folders and mark parent-active
+            if (activeElement) {
+                var parent = activeElement.parentElement;
+                while (parent && parent.id !== 'sidebarContent') {
+                    if (parent.classList.contains('folder-content')) {
+                        parent.style.display = 'block';
+                        
+                        // Handle folder header sibling
+                        var headerSibling = parent.previousElementSibling;
+                        if (headerSibling && headerSibling.classList.contains('folder-header')) {
+                            headerSibling.classList.add('parent-active');
+                            var chev = headerSibling.querySelector('.chevron svg');
+                            if (chev) {
+                                chev.style.transform = 'rotate(90deg)';
+                            }
+                        }
+                    }
+                    parent = parent.parentElement;
+                }
+
+                // 4. Smooth scroll active item into view
+                setTimeout(function() {
+                    activeElement.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+                }, 50);
+            }
+        }
+
+        // Render Markdown Page Content
+        function loadPage(pagePath) {
+            pagePath = decodeURIComponent(pagePath);
+            
+            // Update sidebar state immediately
+            updateSidebarState(pagePath);
 
             // Close mobile menu if open
             document.getElementById('sidebarContent').classList.remove('active');
@@ -944,25 +1015,46 @@ function getTemplateHTML(tree, searchIndex, pageContents) {
                     // Scroll to top
                     document.querySelector('main').scrollTop = 0;
 
-                    // Auto-expand parent folders of active item
-                    var activeElement = document.querySelector('.menu-item.active') || document.querySelector('.folder-header.active');
-                    if (activeElement) {
-                        var parent = activeElement.parentElement;
-                        while (parent && parent.id !== 'sidebarContent') {
-                            if (parent.classList.contains('folder-content')) {
-                                parent.style.display = 'block';
-                                // Also rotate the corresponding chevron
-                                var headerSibling = parent.previousElementSibling;
-                                if (headerSibling && headerSibling.classList.contains('folder-header')) {
-                                    var chev = headerSibling.querySelector('.chevron svg');
-                                    if (chev) {
-                                        chev.style.transform = 'rotate(90deg)';
-                                    }
-                                }
-                            }
-                            parent = parent.parentElement;
+                    // Resolve relative/absolute image paths for online/offline compatibility
+                    contentDiv.querySelectorAll('img').forEach(function(img) {
+                        var src = img.getAttribute('src');
+                        if (!src) return;
+
+                        var isOffline = window.location.protocol.indexOf('http') === -1;
+
+                        // 1. If it's a fixed path /wiki/assets/... in offline mode, rewrite to relative wiki/assets/...
+                        if (isOffline && src.indexOf('/wiki/assets/') === 0) {
+                            img.src = src.substring(1); // remove leading '/' -> 'wiki/assets/...'
+                            return;
                         }
-                    }
+
+                        // 2. If it's a local relative image, resolve relative path according to the current markdown file location
+                        if (src.indexOf('http') === -1 && src.indexOf('://') === -1 && src.indexOf('/') !== 0 && src.indexOf('data:') !== 0) {
+                            var currentFolder = pagePath.substring(0, pagePath.lastIndexOf('/'));
+                            var targetPath = '';
+                            if (src.indexOf('./') === 0) {
+                                src = src.substring(2);
+                            }
+                            
+                            if (src.indexOf('../') === 0) {
+                                var steps = src.split('/');
+                                var folderParts = currentFolder.split('/');
+                                steps.forEach(function(step) {
+                                    if (step === '..') {
+                                        folderParts.pop();
+                                    } else {
+                                        folderParts.push(step);
+                                    }
+                                });
+                                targetPath = folderParts.join('/');
+                            } else {
+                                targetPath = currentFolder ? currentFolder + '/' + src : src;
+                            }
+                            
+                            // Prefix with "wiki/" because the assets live inside the wiki/ directory
+                            img.src = 'wiki/' + targetPath;
+                        }
+                    });
 
                     // Intercept links within the rendered markdown to navigate internally
                     contentDiv.querySelectorAll('a').forEach(function(link) {
@@ -1007,7 +1099,7 @@ function getTemplateHTML(tree, searchIndex, pageContents) {
 
             // Determine loading strategy: Try live fetch if running on http/https
             if (window.location.protocol.indexOf('http') === 0) {
-                fetch('wiki/' + pagePath)
+                fetch('wiki/' + pagePath + '?t=' + new Date().getTime(), { cache: 'no-store' })
                     .then(function(response) {
                         if (!response.ok) throw new Error('Fetch failed');
                         return response.text();

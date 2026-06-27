@@ -13,3 +13,6 @@
 | **인이어 이어폰 (IEM)** | [키위이어스 오케스트라 2 (Kiwi Ears Orchestra II)](1_1_iem/Kiwi_Ears_Orchestra.md) | 10 Balanced Armature & 4-Way 크로스오버 (10 BA) |
 | **헤드폰 (Headphones)** | [필립스 SHP9500 (Philips SHP9500)](1_2_headphones/Philips_SHP9500.md) | 50mm 대구경 네오디뮴 다이내믹 드라이버 (오픈형) |
 
+### 보유 기기 갤러리
+![TRN 캐러벨 (TRN Caravel)](/wiki/assets/trn-caraver-260627.jpg)
+
