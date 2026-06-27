@@ -11,5 +11,4 @@ title_en: "Headphones"
 ## 📄 문서 목록
 * [필립스 SHP9500 (Philips SHP9500)](Philips_SHP9500.md)
 * [슈어 KSE1500 / KSE1200 (Shure KSE1500 / KSE1200)](Shure_KSE1500.md)
-* [스탁스 SRS-002 (Stax SRS-002)](Stax_SRS002.md)
 

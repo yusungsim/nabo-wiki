@@ -9,9 +9,6 @@ title_en: "Server & Streaming"
 ---
 
 ## 📄 문서 목록
-* [앰페타민 (Amphetamine)](Amphetamine.md)
 * [클라우드플레어 터널 (Cloudflare Tunnels)](Cloudflare_Tunnels.md)
-* [나비드롬 (Navidrome)](Navidrome.md)
-* [플렉스 (Plex)](Plex.md)
 * [테일스케일 (Tailscale)](Tailscale.md)
 
