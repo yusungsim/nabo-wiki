@@ -1092,9 +1092,12 @@ function getTemplateHTML(tree, searchIndex, pageContents) {
             contentDiv.style.opacity = 0; // Fade out
 
             function displayMarkdown(markdown) {
+                // Strip YAML frontmatter from display
+                var cleanMarkdown = markdown.replace(/^---\r?\n[\s\S]+?\r?\n---/, '');
+
                 setTimeout(function() {
                     // Render Markdown via marked
-                    contentDiv.innerHTML = marked.parse(markdown);
+                    contentDiv.innerHTML = marked.parse(cleanMarkdown);
                     contentDiv.style.opacity = 1; // Fade in
                     
                     // Scroll to top
