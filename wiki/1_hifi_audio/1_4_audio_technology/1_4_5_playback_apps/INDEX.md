@@ -10,10 +10,10 @@ title_en: "Playback Apps"
 
 ## 📄 문서 목록
 * [FiiO Music](FiiO_Music.md)
-* [Neutron Music Player](Neutron_Music_Player.md)
-* [Plexamp](Plexamp.md)
-* [Rockbox](Rockbox.md)
-* [Roon](Roon.md)
-* [Symfonium Substreamer](Symfonium_Substreamer.md)
-* [UAPP](UAPP.md)
+* [뉴트론 뮤직 플레이어 (Neutron Music Player)](Neutron_Music_Player.md)
+* [플렉스앰프 (Plexamp)](Plexamp.md)
+* [락박스 (Rockbox)](Rockbox.md)
+* [룬 (Roon)](Roon.md)
+* [심포니엄 (Symfonium) / Substreamer](Symfonium_Substreamer.md)
+* [UAPP (Universal Audio Player Pro)](UAPP.md)
 

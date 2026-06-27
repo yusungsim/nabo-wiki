@@ -9,6 +9,6 @@ title_en: "iPod Mods"
 ---
 
 ## 📄 문서 목록
-* [Raspberry Pi iPod sPot](Raspberry_Pi_iPod_sPot.md)
-* [iPod iMod](iPod_iMod.md)
+* [라즈베리 파이 개조 아이팟 (sPot 프로젝트)](Raspberry_Pi_iPod_sPot.md)
+* [iMod (아이모드 개조)](iPod_iMod.md)
 

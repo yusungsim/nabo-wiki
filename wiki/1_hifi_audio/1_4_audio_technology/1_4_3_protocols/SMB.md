@@ -1,6 +1,8 @@
 ---
 title_ko: "SMB"
 title_en: "Samba v2 & v3"
+status: "draft"
+tags: [프로토콜, HiFi]
 ---
 # SMB (Samba v2 & v3)
 

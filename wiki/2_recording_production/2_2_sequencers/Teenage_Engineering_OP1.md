@@ -1,6 +1,8 @@
 ---
 title_ko: "틴에이지 엔지니어링 OP-1"
 title_en: "Teenage Engineering OP-1"
+status: "draft"
+tags: [시퀀서, 프로덕션]
 ---
 # 틴에이지 엔지니어링 OP-1 (Teenage Engineering OP-1)
 

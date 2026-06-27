@@ -10,5 +10,5 @@ title_en: "DAP"
 
 ## 📄 문서 목록
 * [FiiO M21](FiiO_M21.md)
-* [iPod Classic](iPod_Classic.md)
+* [아이팟 클래식 (iPod Classic / Video)](iPod_Classic.md)
 

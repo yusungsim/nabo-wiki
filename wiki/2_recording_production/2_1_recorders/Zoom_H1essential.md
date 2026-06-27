@@ -1,6 +1,8 @@
 ---
 title_ko: "줌 H1essential / H1n"
 title_en: "Zoom H1essential / H1n"
+status: "draft"
+tags: [레코더, 프로덕션]
 ---
 # 줌 H1essential / H1n (Zoom H1essential / H1n)
 

@@ -1,5 +1,7 @@
 ---
 title_ko: "FiiO Music"
+status: "draft"
+tags: [재생 앱, HiFi]
 ---
 # FiiO Music
 

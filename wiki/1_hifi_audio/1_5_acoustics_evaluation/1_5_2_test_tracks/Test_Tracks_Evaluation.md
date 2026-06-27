@@ -1,13 +1,15 @@
 ---
 title_ko: "🎵 음질 평가용 테스트 트랙 및 음향 벤치마크"
 title_en: "Test Tracks & Acoustic Benchmarks"
+status: "draft"
+tags: [테스트 트랙, HiFi]
 ---
 # 🎵 음질 평가용 테스트 트랙 및 음향 벤치마크 (Test Tracks & Acoustic Benchmarks)
 
 ## 개요
-인이어 모니터(IEM)와 헤드폰을 비롯한 전기음향 트랜스듀서의 평가는 단순히 [다이내믹 레인지](../1_5_1_physics_terms/Dynamic_Range.md)나 하모닉 왜곡(THD)과 같은 전기학적 계측 수치에만 의존할 수 없습니다. 인간의 청각 인지 시스템(Psychoacoustics)은 물리적 주파수 응답 곡선 너머의 복합적인 소리를 인지하기 때문에, 디바이스의 기계적 한계와 음색적 왜곡을 감지하려면 고도로 정밀하게 조율되거나 특정 음향적 난제를 지닌 레퍼런스 트랙을 이용한 청음 평가가 필수적입니다.
+인이어 모니터(IEM)와 헤드폰을 비롯한 전기음향 트랜스듀서의 평가는 단순히 [다이내믹 레인지 (Dynamic Range)](../1_5_1_physics_terms/Dynamic_Range.md)나 하모닉 왜곡(THD)과 같은 전기학적 계측 수치에만 의존할 수 없습니다. 인간의 청각 인지 시스템(Psychoacoustics)은 물리적 주파수 응답 곡선 너머의 복합적인 소리를 인지하기 때문에, 디바이스의 기계적 한계와 음색적 왜곡을 감지하려면 고도로 정밀하게 조율되거나 특정 음향적 난제를 지닌 레퍼런스 트랙을 이용한 청음 평가가 필수적입니다.
 
-음향 학계와 하이파이 오디오 커뮤니티는 기기 성능의 한계를 스트레스 테스트하기 위해 정밀한 테스트 곡 레퍼토리를 구축해 왔습니다. 이 평가 체계는 크게 **토널리티(Tonality, 토널 밸런스)**와 **테크니컬리티(Technicalities, 해상도, [트랜지언트](../1_5_1_physics_terms/Transient.md) 반응 속도, 음상 이미징 등)**라는 두 가지 축으로 구성되며, 다양한 곡을 통해 트랜스듀서의 기계적 완성도를 진단합니다.
+음향 학계와 하이파이 오디오 커뮤니티는 기기 성능의 한계를 스트레스 테스트하기 위해 정밀한 테스트 곡 레퍼토리를 구축해 왔습니다. 이 평가 체계는 크게 **토널리티(Tonality, 토널 밸런스)**와 **테크니컬리티(Technicalities, 해상도, [트랜지언트 (Transient / 과도 응답 및 어택감)](../1_5_1_physics_terms/Transient.md) 반응 속도, 음상 이미징 등)**라는 두 가지 축으로 구성되며, 다양한 곡을 통해 트랜스듀서의 기계적 완성도를 진단합니다.
 
 ### 📌 부문별 평가 핵심 및 원픽 레퍼런스 트랙 요약
 음향기기 평가는 아래 5가지 범주의 음향 스트레스 요인을 기준으로 기기의 한계를 측정하며, 각 부문별 대표 벤치마크 곡이 지표로 기능합니다.
@@ -38,7 +40,7 @@ title_en: "Test Tracks & Acoustic Benchmarks"
 | 아티스트 | 트랙명 | 앨범 | 주요 진단 목표 |
 | :--- | :--- | :--- | :--- |
 | **Tracy Chapman** | "Fast Car" | *Tracy Chapman* | 전 대역의 유기적 토널 밸런스 평가, 핑크 노이즈 대체재로서의 미세 공진 및 왜곡 판별 |
-| **Jennifer Warnes** | "Bird on a Wire" | *Famous Blue Raincoat* | 중고역 보컬의 중립성 검증, [치찰음](../1_5_1_physics_terms/Sibilance.md) 대역의 왜곡 탐지, 잔향 감쇄 및 입체적인 공간 레이어링 측정 |
+| **Jennifer Warnes** | "Bird on a Wire" | *Famous Blue Raincoat* | 중고역 보컬의 중립성 검증, [치찰음 (Sibilance)](../1_5_1_physics_terms/Sibilance.md) 대역의 왜곡 탐지, 잔향 감쇄 및 입체적인 공간 레이어링 측정 |
 | **James Taylor** | "That's Why I'm Here" | *That's Why I'm Here* | 남성 보컬의 기음 대역(낮은 미드레인지) 묘사력, 어쿠스틱 기타 현의 트랜지언트 소멸 반응, 저역대 마스킹 여부 진단 |
 | **Steely Dan** | "Cousin Dupree" | *Two Against Nature* | 미드베이스의 단단함 및 통제력, 극저음 타격에 따른 상위 대역의 상호 변조 왜곡(IMD) 탐지 |
 | **Paula Cole** | "Tiger" | *This Fire* | 초고역 대역의 대역폭 확장성, 여성 보컬 피크 대역의 유연한 대처 및 매크로 다이내믹스 한계 측정 |
@@ -65,7 +67,7 @@ title_en: "Test Tracks & Acoustic Benchmarks"
 전문 헤드폰/IEM 리뷰어들(Crinacle, Precogvision, Resolve 등)은 학술적 표준에 더하여 현대의 대중적인 마스터링 스타일과 다양한 드라이버 토폴로지(Hybrid, Tribrid)의 단점을 드러낼 수 있는 트랙들을 검증에 적극 차용하고 있습니다.
 
 ### Crinacle: 복합 레이어 스트레스 테스트
-* **Deadmau5 - "Sofi Needs a Ladder"** 등 복잡하게 설계된 일렉트로닉 댄스 뮤직(EDM)과 초과밀 합성 음원들을 사용합니다. 수많은 전자음 레이어가 겹쳐 전 대역을 쉴 새 없이 몰아칠 때, 하드웨어 성능이 떨어지는 리시버는 악기들이 서로 엉켜 중고역이 지워지는 [마스킹 현상](../1_5_1_physics_terms/Masking.md)이 발생하지만, 분리 성능이 탁월한 드라이버는 각각의 음향 가닥을 선명하게 발라냅니다.
+* **Deadmau5 - "Sofi Needs a Ladder"** 등 복잡하게 설계된 일렉트로닉 댄스 뮤직(EDM)과 초과밀 합성 음원들을 사용합니다. 수많은 전자음 레이어가 겹쳐 전 대역을 쉴 새 없이 몰아칠 때, 하드웨어 성능이 떨어지는 리시버는 악기들이 서로 엉켜 중고역이 지워지는 [마스킹 현상 (Masking Effect)](../1_5_1_physics_terms/Masking.md)이 발생하지만, 분리 성능이 탁월한 드라이버는 각각의 음향 가닥을 선명하게 발라냅니다.
 * K-Pop 및 다양한 모던 록 장르를 포함하여, 불량한 마스터링 대역에서도 피로감 없이 깨끗하게 재생해 내는지를 종합 진단합니다.
 
 ### Precogvision: 대역 분리도 및 토널 정밀도
@@ -86,7 +88,7 @@ title_en: "Test Tracks & Acoustic Benchmarks"
 저역 평가는 깊은 곳까지 뻗는 극저음(Sub-bass, 20Hz~60Hz), 타격감과 탄성을 좌우하는 미드베이스(Mid-bass, 60Hz~250Hz), 그리고 소리의 결을 보여주는 저역 질감(Texture)의 표현력으로 세분화됩니다.
 
 * **DD(다이내믹 드라이버) vs BA(밸런스드 아마추어)의 물리적 차이**: 
-  [다이내믹 드라이버](../../1_3_audio_tech_formats/1_3_1_drivers_materials/Dynamic_Driver.md)는 대량의 공기를 자연스럽게 밀어내어 극저역의 웅장한 울림과 자연스러운 잔향(Decay)을 형성합니다. 반면, 금속 리드를 진동시키는 [밸런스드 아마추어](../../1_3_audio_tech_formats/1_3_1_drivers_materials/Balanced_Armature.md)는 감쇄 속도가 극도로 빨라 타이트하고 세밀한 결은 잘 잡지만 깊고 묵직하게 깔리는 공기 감각이 부족하여 다소 인위적이고 가벼운 **'BA 저음(BA Bass)'**을 내는 특성이 있습니다.
+  [다이내믹 드라이버 (Dynamic Driver - DD)](../../1_4_audio_technology/1_4_1_drivers_materials/Dynamic_Driver.md)는 대량의 공기를 자연스럽게 밀어내어 극저역의 웅장한 울림과 자연스러운 잔향(Decay)을 형성합니다. 반면, 금속 리드를 진동시키는 [밸런스드 아마추어 (Balanced Armature - BA)](../../1_4_audio_technology/1_4_1_drivers_materials/Balanced_Armature.md)는 감쇄 속도가 극도로 빨라 타이트하고 세밀한 결은 잘 잡지만 깊고 묵직하게 깔리는 공기 감각이 부족하여 다소 인위적이고 가벼운 **'BA 저음(BA Bass)'**을 내는 특성이 있습니다.
 
 #### 저음 평가 주요 곡 및 진단 포인트
 | 아티스트 | 트랙명 | 음향적 스트레스 요인 | 핵심 평가 지표 |
@@ -119,8 +121,8 @@ title_en: "Test Tracks & Acoustic Benchmarks"
 ### 고음역 (Treble Extension, Sibilance & Transient Speed)
 고음(4kHz~20kHz)은 사운드의 공기감(Airy), 현장 디테일, 타격의 시원함을 정립하지만, 잘못 튜닝될 경우 격렬한 피로를 몰고 오는 대역입니다.
 
-* **[치찰음](../1_5_1_physics_terms/Sibilance.md)(Sibilance) 탐지**: 보컬의 자음 발음 시 방출되는 5kHz~8kHz 대역의 강한 마찰 에너지입니다. 드라이버 표면의 강도 부족으로 유발되는 [분할 진동(Cone Breakup)](../1_5_1_physics_terms/Breakup.md) 현상이나 이도 공진 피크가 이 대역과 맞물릴 때, '스', '츠' 소리가 칼날처럼 귀를 찔러 장시간 청음이 불가능해집니다.
-* **[트랜지언트](../1_5_1_physics_terms/Transient.md) 속도**: 고밀도의 급박한 고주파 타격 시 드라이버가 원래 위치로 지연 없이 복귀해야 지저분한 여음 잔재가 남지 않습니다. 진동판의 무게가 제로에 가깝고 고압의 균일한 힘을 받는 [평판형](../../1_3_audio_tech_formats/1_3_1_drivers_materials/Planar_Magnetic.md)이나 [정전형](../../1_3_audio_tech_formats/1_3_1_drivers_materials/Electrostatic.md) 드라이버가 고역 트랜지언트 재생에서 강세를 보이는 주 원인입니다.
+* **[치찰음 (Sibilance)](../1_5_1_physics_terms/Sibilance.md)(Sibilance) 탐지**: 보컬의 자음 발음 시 방출되는 5kHz~8kHz 대역의 강한 마찰 에너지입니다. 드라이버 표면의 강도 부족으로 유발되는 [분할 진동 (Breakup / Cone Breakup)](../1_5_1_physics_terms/Breakup.md) 현상이나 이도 공진 피크가 이 대역과 맞물릴 때, '스', '츠' 소리가 칼날처럼 귀를 찔러 장시간 청음이 불가능해집니다.
+* **[트랜지언트 (Transient / 과도 응답 및 어택감)](../1_5_1_physics_terms/Transient.md) 속도**: 고밀도의 급박한 고주파 타격 시 드라이버가 원래 위치로 지연 없이 복귀해야 지저분한 여음 잔재가 남지 않습니다. 진동판의 무게가 제로에 가깝고 고압의 균일한 힘을 받는 [평판형 자계 (Planar Magnetic)](../../1_4_audio_technology/1_4_1_drivers_materials/Planar_Magnetic.md)이나 [정전형 (Electrostatic - EST)](../../1_4_audio_technology/1_4_1_drivers_materials/Electrostatic.md) 드라이버가 고역 트랜지언트 재생에서 강세를 보이는 주 원인입니다.
 
 #### 고음 평가 주요 곡 및 진단 포인트
 | 아티스트 | 트랙명 | 음향적 스트레스 요인 | 핵심 평가 지표 |
@@ -170,6 +172,6 @@ title_en: "Test Tracks & Acoustic Benchmarks"
 ---
 
 ## 🔗 연관 개념 문서 바로가기
-* 🧬 **하드웨어 기초**: [다이내믹 드라이버 (Dynamic Driver)](../../1_3_audio_tech_formats/1_3_1_drivers_materials/Dynamic_Driver.md) | [밸런스드 아마추어 (Balanced Armature)](../../1_3_audio_tech_formats/1_3_1_drivers_materials/Balanced_Armature.md) | [DLC 진동판](../../1_3_audio_tech_formats/1_3_1_drivers_materials/DLC.md)
-* 🏷️ **음향 반응 이론**: [트랜지언트 (Transient)](../1_5_1_physics_terms/Transient.md) | [분할 진동 (Cone Breakup)](../1_5_1_physics_terms/Breakup.md) | [마스킹 현상 (Masking)](../1_5_1_physics_terms/Masking.md) | [치찰음 (Sibilance)](../1_5_1_physics_terms/Sibilance.md)
-* 📡 **데이터 벤치**: [다이내믹 레인지 (Dynamic Range)](../1_5_1_physics_terms/Dynamic_Range.md) | [클리핑 (Clipping)](../1_5_1_physics_terms/Clipping.md) | [다운샘플링 & 리샘플링](../../1_3_audio_tech_formats/1_3_2_digital_formats/Resampling.md)
+* 🧬 **하드웨어 기초**: [다이내믹 드라이버 (Dynamic Driver - DD)](../../1_4_audio_technology/1_4_1_drivers_materials/Dynamic_Driver.md) | [밸런스드 아마추어 (Balanced Armature - BA)](../../1_4_audio_technology/1_4_1_drivers_materials/Balanced_Armature.md) | [DLC (Diamond-Like Carbon) 진동판](../../1_4_audio_technology/1_4_1_drivers_materials/DLC.md)
+* 🏷️ **음향 반응 이론**: [트랜지언트 (Transient / 과도 응답 및 어택감)](../1_5_1_physics_terms/Transient.md) | [분할 진동 (Breakup / Cone Breakup)](../1_5_1_physics_terms/Breakup.md) | [마스킹 현상 (Masking Effect)](../1_5_1_physics_terms/Masking.md) | [치찰음 (Sibilance)](../1_5_1_physics_terms/Sibilance.md)
+* 📡 **데이터 벤치**: [다이내믹 레인지 (Dynamic Range)](../1_5_1_physics_terms/Dynamic_Range.md) | [클리핑 (Clipping)](../1_5_1_physics_terms/Clipping.md) | [다운샘플링 & 리샘플링 (Downsampling / Resampling)](../../1_4_audio_technology/1_4_2_digital_formats/Resampling.md)

@@ -9,6 +9,6 @@ title_en: "Reviews"
 ---
 
 ## 📄 문서 목록
-* [Favorite Albums](Favorite_Albums.md)
-* [IDM Ambient Guide](IDM_Ambient_Guide.md)
+* [개인 소장 명반선 (Favorite Albums)](Favorite_Albums.md)
+* [IDM & 앰비언트 일렉트로닉 가이드 (IDM & Ambient)](IDM_Ambient_Guide.md)
 

@@ -9,5 +9,5 @@ title_en: "Accessories"
 ---
 
 ## 📄 문서 목록
-* [Divinus Velvet Tips](Divinus_Velvet_Tips.md)
+* [디비누스 벨벳 팁 (Divinus Velvet Tips)](Divinus_Velvet_Tips.md)
 

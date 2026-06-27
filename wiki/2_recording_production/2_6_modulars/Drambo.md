@@ -1,6 +1,8 @@
 ---
 title_ko: "드람보"
 title_en: "Drambo"
+status: "draft"
+tags: [모듈러, 프로덕션]
 ---
 # 드람보 (Drambo)
 

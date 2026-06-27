@@ -1,6 +1,8 @@
 ---
 title_ko: "에이블톤 라이브"
 title_en: "Ableton Live"
+status: "draft"
+tags: [DAW, 프로덕션]
 ---
 # 에이블톤 라이브 (Ableton Live)
 

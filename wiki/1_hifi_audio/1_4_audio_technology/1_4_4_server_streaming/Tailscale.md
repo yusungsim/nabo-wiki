@@ -1,6 +1,8 @@
 ---
 title_ko: "테일스케일"
 title_en: "Tailscale"
+status: "draft"
+tags: [서버/스트리밍, HiFi]
 ---
 # 테일스케일 (Tailscale)
 

@@ -1,6 +1,8 @@
 ---
 title_ko: "PCM"
 title_en: "Pulse Code Modulation"
+status: "draft"
+tags: [디지털 포맷, HiFi]
 ---
 # PCM (Pulse Code Modulation)
 

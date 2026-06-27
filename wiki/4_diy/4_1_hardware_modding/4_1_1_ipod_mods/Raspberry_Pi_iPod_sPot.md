@@ -1,6 +1,8 @@
 ---
 title_ko: "라즈베리 파이 개조 아이팟"
 title_en: "sPot 프로젝트"
+status: "draft"
+tags: [아이팟 개조, DIY]
 ---
 # 라즈베리 파이 개조 아이팟 (sPot 프로젝트)
 

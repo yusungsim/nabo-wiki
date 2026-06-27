@@ -16,5 +16,5 @@ title_en: "HiFi Audio"
 * **[음향 이론 및 청음 평가 (Acoustics & Evaluation)](1_5_acoustics_evaluation/INDEX.md)**
 
 ## 📄 문서 목록
-* [내 소유 음향 장비 (My Audio Gear)](%EB%82%B4%20%EC%86%8C%EC%9C%A0%20%EC%9D%8C%ED%96%A5%20%EC%9E%A5%EB%B9%84%20%28My%20Audio%20Gear%29.md)
+* [🎧 내 소유 음향 장비 목록 (My Audio Gear)](%EB%82%B4%20%EC%86%8C%EC%9C%A0%20%EC%9D%8C%ED%96%A5%20%EC%9E%A5%EB%B9%84%20%28My%20Audio%20Gear%29.md)
 

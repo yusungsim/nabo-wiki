@@ -1,6 +1,8 @@
 ---
 title_ko: "틴에이지 엔지니어링 EP-133 K.O. II"
 title_en: "Teenage Engineering EP-133 K.O. II"
+status: "draft"
+tags: [샘플러, 프로덕션]
 ---
 # 틴에이지 엔지니어링 EP-133 K.O. II (Teenage Engineering EP-133 K.O. II)
 

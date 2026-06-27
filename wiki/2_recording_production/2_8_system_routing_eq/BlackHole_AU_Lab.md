@@ -1,5 +1,7 @@
 ---
 title_ko: "BlackHole + AU Lab"
+status: "draft"
+tags: [라우팅/EQ, 프로덕션]
 ---
 # BlackHole + AU Lab
 

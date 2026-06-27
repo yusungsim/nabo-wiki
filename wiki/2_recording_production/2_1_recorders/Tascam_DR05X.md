@@ -1,6 +1,8 @@
 ---
 title_ko: "타스캠 DR-05X / DR-05"
 title_en: "Tascam DR-05X / DR-05"
+status: "draft"
+tags: [레코더, 프로덕션]
 ---
 # 타스캠 DR-05X / DR-05 (Tascam DR-05X / DR-05)
 

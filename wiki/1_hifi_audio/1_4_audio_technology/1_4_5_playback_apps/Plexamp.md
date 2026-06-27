@@ -1,6 +1,8 @@
 ---
 title_ko: "플렉스앰프"
 title_en: "Plexamp"
+status: "draft"
+tags: [재생 앱, HiFi]
 ---
 # 플렉스앰프 (Plexamp)
 

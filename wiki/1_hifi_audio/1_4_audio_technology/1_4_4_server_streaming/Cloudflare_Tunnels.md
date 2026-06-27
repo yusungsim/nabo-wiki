@@ -1,6 +1,8 @@
 ---
 title_ko: "클라우드플레어 터널"
 title_en: "Cloudflare Tunnels"
+status: "draft"
+tags: [서버/스트리밍, HiFi]
 ---
 # 클라우드플레어 터널 (Cloudflare Tunnels)
 

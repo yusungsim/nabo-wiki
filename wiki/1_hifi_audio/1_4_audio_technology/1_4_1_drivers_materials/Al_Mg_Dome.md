@@ -1,5 +1,7 @@
 ---
 title_ko: "알루미늄-마그네슘 (Al-Mg) 합금 돔"
+status: "draft"
+tags: [드라이버/소재, HiFi]
 ---
 # 알루미늄-마그네슘 (Al-Mg) 합금 돔
 

@@ -1,5 +1,7 @@
 ---
 title_ko: "심포니엄 (Symfonium) / Substreamer"
+status: "draft"
+tags: [재생 앱, HiFi]
 ---
 # 심포니엄 (Symfonium) / Substreamer
 

@@ -9,7 +9,7 @@ title_en: "Samplers"
 ---
 
 ## 📄 문서 목록
-* [Roland P6](Roland_P6.md)
-* [Roland SP404MKII](Roland_SP404MKII.md)
-* [Teenage Engineering EP133](Teenage_Engineering_EP133.md)
+* [롤랜드 AIRA Compact P-6 (Roland P-6)](Roland_P6.md)
+* [롤랜드 SP-404MKII (Roland SP-404MKII)](Roland_SP404MKII.md)
+* [틴에이지 엔지니어링 EP-133 K.O. II (Teenage Engineering EP-133 K.O. II)](Teenage_Engineering_EP133.md)
 

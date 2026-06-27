@@ -1,6 +1,8 @@
 ---
 title_ko: "뉴트론 뮤직 플레이어"
 title_en: "Neutron Music Player"
+status: "draft"
+tags: [재생 앱, HiFi]
 ---
 # 뉴트론 뮤직 플레이어 (Neutron Music Player)
 

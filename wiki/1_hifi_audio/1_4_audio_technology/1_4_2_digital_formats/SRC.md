@@ -1,6 +1,8 @@
 ---
 title_ko: "SRC"
 title_en: "Sample Rate Conversion / 샘플 레이트 컨버터"
+status: "draft"
+tags: [디지털 포맷, HiFi]
 ---
 # SRC (Sample Rate Conversion / 샘플 레이트 컨버터)
 

@@ -9,12 +9,12 @@ title_en: "Physics Terms"
 ---
 
 ## 📄 문서 목록
-* [Breakup](Breakup.md)
-* [Clipping](Clipping.md)
-* [Dynamic Range](Dynamic_Range.md)
-* [Jitter](Jitter.md)
-* [Masking](Masking.md)
-* [Quantization Noise](Quantization_Noise.md)
-* [Sibilance](Sibilance.md)
-* [Transient](Transient.md)
+* [분할 진동 (Breakup / Cone Breakup)](Breakup.md)
+* [클리핑 (Clipping)](Clipping.md)
+* [다이내믹 레인지 (Dynamic Range)](Dynamic_Range.md)
+* [지터 (Jitter)](Jitter.md)
+* [마스킹 현상 (Masking Effect)](Masking.md)
+* [양자화 노이즈 (Quantization Noise)](Quantization_Noise.md)
+* [치찰음 (Sibilance)](Sibilance.md)
+* [트랜지언트 (Transient / 과도 응답 및 어택감)](Transient.md)
 

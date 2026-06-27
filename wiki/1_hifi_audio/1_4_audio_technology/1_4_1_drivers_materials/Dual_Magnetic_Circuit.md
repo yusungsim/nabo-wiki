@@ -1,6 +1,8 @@
 ---
 title_ko: "듀얼 마그네틱 회로"
 title_en: "Dual Magnetic Circuit"
+status: "draft"
+tags: [드라이버/소재, HiFi]
 ---
 # 듀얼 마그네틱 회로 (Dual Magnetic Circuit)
 

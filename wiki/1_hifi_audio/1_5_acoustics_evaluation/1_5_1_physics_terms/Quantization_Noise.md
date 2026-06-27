@@ -1,6 +1,8 @@
 ---
 title_ko: "양자화 노이즈"
 title_en: "Quantization Noise"
+status: "draft"
+tags: [물리 음향, HiFi]
 ---
 # 양자화 노이즈 (Quantization Noise)
 

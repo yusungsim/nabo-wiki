@@ -1,5 +1,7 @@
 ---
 title_ko: "DLC (Diamond-Like Carbon) 진동판"
+status: "draft"
+tags: [드라이버/소재, HiFi]
 ---
 # DLC (Diamond-Like Carbon) 진동판
 

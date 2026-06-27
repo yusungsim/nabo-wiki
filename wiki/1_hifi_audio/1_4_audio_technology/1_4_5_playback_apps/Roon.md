@@ -1,6 +1,8 @@
 ---
 title_ko: "룬"
 title_en: "Roon"
+status: "draft"
+tags: [재생 앱, HiFi]
 ---
 # 룬 (Roon)
 

@@ -1,6 +1,8 @@
 ---
 title_ko: "비트 퍼펙트"
 title_en: "Bit-Perfect"
+status: "draft"
+tags: [디지털 포맷, HiFi]
 ---
 # 비트 퍼펙트 (Bit-Perfect)
 

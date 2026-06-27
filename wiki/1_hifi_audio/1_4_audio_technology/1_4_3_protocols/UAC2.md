@@ -1,6 +1,8 @@
 ---
 title_ko: "USB Audio Class"
 title_en: "UAC 2.0 / UAC 1.0"
+status: "draft"
+tags: [프로토콜, HiFi]
 ---
 # USB Audio Class (UAC 2.0 / UAC 1.0)
 

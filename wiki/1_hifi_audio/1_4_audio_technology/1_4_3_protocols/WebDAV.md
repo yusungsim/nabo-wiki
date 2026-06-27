@@ -1,6 +1,8 @@
 ---
 title_ko: "WebDAV"
 title_en: "Web Distributed Authoring and Versioning"
+status: "draft"
+tags: [프로토콜, HiFi]
 ---
 # WebDAV (Web Distributed Authoring and Versioning)
 

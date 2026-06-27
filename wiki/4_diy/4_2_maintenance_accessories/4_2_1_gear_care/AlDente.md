@@ -1,5 +1,7 @@
 ---
 title_ko: "AlDente"
+status: "draft"
+tags: [장비 관리, DIY]
 ---
 # AlDente
 

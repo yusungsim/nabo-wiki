@@ -157,17 +157,18 @@ const server = http.createServer((req, res) => {
         return;
     }
 
-    // Serve Wiki Assets (Images, etc.)
-    if (pathname.startsWith('/wiki/assets/')) {
-        const relativePath = pathname.substring(13); // remove '/wiki/assets/'
-        const safePath = path.resolve(path.join(WIKI_DIR, 'assets', relativePath));
+    // Serve Wiki Markdown & Assets
+    if (pathname.startsWith('/wiki/')) {
+        const relativePath = decodeURIComponent(pathname.substring(6)); // remove '/wiki/'
+        const safePath = path.resolve(path.join(WIKI_DIR, relativePath));
         
         // Prevent directory traversal
-        if (safePath.startsWith(path.join(WIKI_DIR, 'assets'))) {
+        if (safePath.startsWith(WIKI_DIR)) {
             try {
                 if (fs.existsSync(safePath) && fs.statSync(safePath).isFile()) {
                     const ext = path.extname(safePath).toLowerCase();
                     const mimeTypes = {
+                        '.md': 'text/plain; charset=utf-8',
                         '.png': 'image/png',
                         '.jpg': 'image/jpeg',
                         '.jpeg': 'image/jpeg',

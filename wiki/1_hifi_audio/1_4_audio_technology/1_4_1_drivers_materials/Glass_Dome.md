@@ -1,5 +1,7 @@
 ---
 title_ko: "글라스 (유리) 돔"
+status: "draft"
+tags: [드라이버/소재, HiFi]
 ---
 # 글라스 (유리) 돔
 

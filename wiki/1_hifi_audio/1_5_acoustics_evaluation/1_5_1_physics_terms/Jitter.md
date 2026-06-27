@@ -1,6 +1,8 @@
 ---
 title_ko: "지터"
 title_en: "Jitter"
+status: "draft"
+tags: [물리 음향, HiFi]
 ---
 # 지터 (Jitter)
 

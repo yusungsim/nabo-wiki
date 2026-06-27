@@ -1,6 +1,8 @@
 ---
 title_ko: "ESS Sabre 계열"
 title_en: "ES9016S / ES9026PRO / ES9038PRO"
+status: "draft"
+tags: [DAC, HiFi]
 ---
 # ESS Sabre 계열 (ES9016S / ES9026PRO / ES9038PRO)
 
@@ -15,6 +17,3 @@ title_en: "ES9016S / ES9026PRO / ES9038PRO"
 ### ES9038PRO
 * ESS의 거치형 플래그십 8채널 DAC 칩셋입니다. 단일 칩 기준 무려 140dB의 압도적인 다이내믹 레인지를 뿜어내며, 32-bit/768kHz PCM 및 DSD5102 네이티브 재생을 지원합니다.
 * ESS 독허 특허인 **HyperStream II** 아키텍처와 **지터 제거(Time Domain Jitter Eliminator)** 연산 엔진을 내장하여 시간적 오차가 아예 배제된 궁극의 정밀 사운드를 들려줍니다.
-
-## 음색 성향
-극도로 분석적이며 소리의 엣지(Transient)를 강하고 날카롭게 잡아줍니다. 정보량이 쏟아지며, 차갑고 명확하며 좌우/전후 무대 공간이 매우 넓고 광대하게 펼쳐지는 입체적 사운드가 특징입니다.

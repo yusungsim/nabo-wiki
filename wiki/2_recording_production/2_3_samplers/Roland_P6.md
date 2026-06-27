@@ -1,6 +1,8 @@
 ---
 title_ko: "롤랜드 AIRA Compact P-6"
 title_en: "Roland P-6"
+status: "draft"
+tags: [샘플러, 프로덕션]
 ---
 # 롤랜드 AIRA Compact P-6 (Roland P-6)
 

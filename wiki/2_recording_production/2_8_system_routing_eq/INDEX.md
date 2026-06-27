@@ -9,7 +9,7 @@ title_en: "System Routing & EQ"
 ---
 
 ## 📄 문서 목록
-* [BlackHole AU Lab](BlackHole_AU_Lab.md)
-* [SoundSource](SoundSource.md)
+* [BlackHole + AU Lab](BlackHole_AU_Lab.md)
+* [사운드소스 (SoundSource)](SoundSource.md)
 * [eqMac](eqMac.md)
 

@@ -1,6 +1,8 @@
 ---
 title_ko: "일렉트론 디지탁트 II"
 title_en: "Elektron Digitakt II"
+status: "draft"
+tags: [시퀀서, 프로덕션]
 ---
 # 일렉트론 디지탁트 II (Elektron Digitakt II)
 

@@ -1,5 +1,7 @@
 ---
 title_ko: "DDEX (Digital Data Exchange) 및 업계 배포 표준"
+status: "draft"
+tags: [디지털 포맷, HiFi]
 ---
 # DDEX (Digital Data Exchange) 및 업계 배포 표준
 

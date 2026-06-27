@@ -12,6 +12,7 @@ function getWikiTree(dir, relativeDir = '') {
     items.forEach(item => {
         if (item.startsWith('.')) return;
         if (item === 'assets') return; // Skip static assets directory from sidebar tree
+        if (item === 'CONVENTION.md') return; // Skip convention guidelines from sidebar tree
         
         const fullPath = path.join(dir, item);
         const relPath = path.join(relativeDir, item);
@@ -27,7 +28,8 @@ function getWikiTree(dir, relativeDir = '') {
         } else if (item.endsWith('.md')) {
             let cleanName = item.replace('.md', '').replace(/_/g, ' ');
             let displayName = cleanName;
-            
+            let tags = [];
+
             try {
                 const fileContent = fs.readFileSync(fullPath, 'utf8');
                 const frontmatterRegex = /^---\r?\n([\s\S]+?)\r?\n---/;
@@ -37,6 +39,7 @@ function getWikiTree(dir, relativeDir = '') {
                     const koMatch = yamlContent.match(/title_ko:\s*(.+)/);
                     const enMatch = yamlContent.match(/title_en:\s*(.+)/);
                     const titleMatch = yamlContent.match(/title:\s*(.+)/);
+                    const tagsMatch = yamlContent.match(/tags:\s*\[(.*?)\]/);
                     
                     let titleKo = koMatch ? koMatch[1].trim().replace(/^['"]|['"]$/g, '') : '';
                     let titleEn = enMatch ? enMatch[1].trim().replace(/^['"]|['"]$/g, '') : '';
@@ -52,6 +55,10 @@ function getWikiTree(dir, relativeDir = '') {
                     } else if (titleEn) {
                         displayName = titleEn;
                     }
+                    
+                    if (tagsMatch && tagsMatch[1]) {
+                        tags = tagsMatch[1].split(',').map(t => t.trim().replace(/^['"]|['"]$/g, '')).filter(t => t);
+                    }
                 }
             } catch (err) {
                 // Fallback to cleanName
@@ -61,7 +68,8 @@ function getWikiTree(dir, relativeDir = '') {
                 name: displayName,
                 fileName: item,
                 type: 'file',
-                path: relPath
+                path: relPath,
+                tags: tags
             });
         }
     });
@@ -83,7 +91,8 @@ function getFlatPageList(tree) {
         } else {
             list.push({
                 name: item.name,
-                path: item.path
+                path: item.path,
+                tags: item.tags || []
             });
         }
     });
@@ -96,6 +105,7 @@ function collectPageContents(dir, relativeDir = '', contents = {}) {
 
     items.forEach(item => {
         if (item.startsWith('.')) return;
+        if (item === 'CONVENTION.md') return; // Skip convention guidelines from search content index
         const fullPath = path.join(dir, item);
         const relPath = path.join(relativeDir, item);
         const stat = fs.statSync(fullPath);
@@ -111,6 +121,55 @@ function collectPageContents(dir, relativeDir = '', contents = {}) {
     return contents;
 }
 
+function buildBacklinks(pageContents) {
+    const backlinks = {};
+    for (const srcPath of Object.keys(pageContents)) {
+        const content = pageContents[srcPath];
+        const regex = /\[.*?\]\(([^)]+\.md)(?:#[^)]+)?\)/g;
+        let match;
+        while ((match = regex.exec(content)) !== null) {
+            let targetPath = match[1];
+            
+            let currentFolder = srcPath.includes('/') ? srcPath.substring(0, srcPath.lastIndexOf('/')) : '';
+            let resolvedTarget = '';
+            
+            if (targetPath.startsWith('../')) {
+                let steps = targetPath.split('/');
+                let folderParts = currentFolder ? currentFolder.split('/') : [];
+                for(let step of steps) {
+                    if (step === '..') folderParts.pop();
+                    else folderParts.push(step);
+                }
+                resolvedTarget = folderParts.join('/');
+            } else if (targetPath.startsWith('./')) {
+                resolvedTarget = currentFolder ? currentFolder + '/' + targetPath.substring(2) : targetPath.substring(2);
+            } else {
+                resolvedTarget = currentFolder ? currentFolder + '/' + targetPath : targetPath;
+            }
+
+            // Exclude structural (top-down) links from backlinks
+            let isStructural = false;
+            if (srcPath === 'README.md') {
+                isStructural = true;
+            } else if (srcPath.endsWith('INDEX.md')) {
+                let srcDir = srcPath.includes('/') ? srcPath.substring(0, srcPath.lastIndexOf('/')) : '';
+                let targetDir = resolvedTarget.includes('/') ? resolvedTarget.substring(0, resolvedTarget.lastIndexOf('/')) : '';
+                if (targetDir === srcDir || targetDir.startsWith(srcDir + '/')) {
+                    isStructural = true;
+                }
+            }
+
+            if (!isStructural) {
+                if (!backlinks[resolvedTarget]) backlinks[resolvedTarget] = [];
+                if (!backlinks[resolvedTarget].includes(srcPath)) {
+                    backlinks[resolvedTarget].push(srcPath);
+                }
+            }
+        }
+    }
+    return backlinks;
+}
+
 function buildStaticWiki() {
     console.log("Starting static wiki compilation...");
 
@@ -122,12 +181,14 @@ function buildStaticWiki() {
     const tree = getWikiTree(WIKI_DIR);
     const searchIndex = getFlatPageList(tree);
     const pageContents = collectPageContents(WIKI_DIR);
+    const backlinks = buildBacklinks(pageContents);
 
     let htmlContent = getTemplateHTML();
     htmlContent = htmlContent
         .replace('/* WIKI_TREE_PLACEHOLDER */', JSON.stringify(tree))
         .replace('/* WIKI_SEARCH_PLACEHOLDER */', JSON.stringify(searchIndex))
-        .replace('/* WIKI_DATA_PLACEHOLDER */', JSON.stringify(pageContents));
+        .replace('/* WIKI_DATA_PLACEHOLDER */', JSON.stringify(pageContents))
+        .replace('/* WIKI_BACKLINKS_PLACEHOLDER */', JSON.stringify(backlinks));
 
     fs.writeFileSync(OUTPUT_FILE, htmlContent, 'utf8');
     console.log(`==================================================`);
@@ -154,6 +215,16 @@ function getTemplateHTML() {
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
     <!-- Marked Markdown Parser -->
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script>
+        const savedTheme = localStorage.getItem('theme') || (window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark');
+        document.documentElement.setAttribute('data-theme', savedTheme);
+        function toggleTheme() {
+            const currentTheme = document.documentElement.getAttribute('data-theme');
+            const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+            document.documentElement.setAttribute('data-theme', newTheme);
+            localStorage.setItem('theme', newTheme);
+        }
+    </script>
     <style>
         :root {
             --bg-main: #0b0d11;
@@ -167,6 +238,23 @@ function getTemplateHTML() {
             --accent-gradient: linear-gradient(135deg, #3b82f6 0%, #a855f7 100%);
             --sidebar-width: 320px;
             --transition-speed: 0.25s;
+            --glass-bg: var(--glass-bg);
+            --glass-bg-hover: var(--glass-bg-hover);
+            --glass-border: var(--glass-border);
+            --glass-border-faint: var(--glass-bg-hover);
+        }
+
+        :root[data-theme='light'] {
+            --bg-main: #f8fafc;
+            --bg-sidebar: #f1f5f9;
+            --bg-card: #ffffff;
+            --border: #e2e8f0;
+            --text-main: #0f172a;
+            --text-muted: #64748b;
+            --glass-bg: rgba(0, 0, 0, 0.03);
+            --glass-bg-hover: rgba(0, 0, 0, 0.06);
+            --glass-border: rgba(0, 0, 0, 0.15);
+            --glass-border-faint: rgba(0, 0, 0, 0.08);
         }
 
         * {
@@ -276,6 +364,9 @@ function getTemplateHTML() {
         .sidebar-header {
             padding: 24px;
             border-bottom: 1px solid var(--border);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
         }
 
         .logo {
@@ -335,12 +426,12 @@ function getTemplateHTML() {
         }
 
         nav::-webkit-scrollbar-thumb {
-            background-color: rgba(255, 255, 255, 0.05);
+            background-color: var(--glass-bg-hover);
             border-radius: 4px;
         }
 
         nav::-webkit-scrollbar-thumb:hover {
-            background-color: rgba(255, 255, 255, 0.15);
+            background-color: var(--glass-border);
         }
 
         .menu-section {
@@ -396,7 +487,7 @@ function getTemplateHTML() {
         }
         
         .folder-header:hover {
-            background-color: rgba(255, 255, 255, 0.03);
+            background-color: var(--glass-bg);
         }
 
         .folder-header.active {
@@ -410,7 +501,7 @@ function getTemplateHTML() {
         }
 
         .folder-header.parent-active .folder-title {
-            color: #fff;
+            color: var(--text-main);
             font-weight: 600;
         }
 
@@ -454,7 +545,7 @@ function getTemplateHTML() {
         
         .chevron:hover {
             color: var(--text-main);
-            background-color: rgba(255, 255, 255, 0.05);
+            background-color: var(--glass-bg-hover);
         }
 
         .chevron svg {
@@ -485,11 +576,11 @@ function getTemplateHTML() {
 
         .menu-item:hover {
             color: var(--text-main);
-            background-color: rgba(255, 255, 255, 0.03);
+            background-color: var(--glass-bg);
         }
 
         .menu-item.active {
-            color: #fff;
+            color: var(--text-main);
             background-color: rgba(59, 130, 246, 0.15);
             border-left: 2px solid var(--accent-blue);
             padding-left: 10px;
@@ -521,7 +612,7 @@ function getTemplateHTML() {
             max-width: 1000px;
             width: 100%;
             margin: 0 auto;
-            padding: 64px 32px;
+            padding: 24px 32px 64px 32px;
             animation: fadeIn 0.3s ease-out;
         }
 
@@ -542,11 +633,11 @@ function getTemplateHTML() {
             border-collapse: collapse;
             margin: 24px 0;
             font-size: 0.95rem;
-            border: 1px solid rgba(255, 255, 255, 0.15);
+            border: 1px solid var(--glass-border);
         }
 
         .wiki-content th, .wiki-content td {
-            border: 1px solid rgba(255, 255, 255, 0.15);
+            border: 1px solid var(--glass-border);
             padding: 12px 16px;
             text-align: left;
         }
@@ -558,7 +649,7 @@ function getTemplateHTML() {
         }
 
         .wiki-content tr:nth-child(even) {
-            background-color: rgba(255, 255, 255, 0.02);
+            background-color: var(--glass-bg);
         }
 
         .wiki-content h1 {
@@ -579,7 +670,7 @@ function getTemplateHTML() {
             font-weight: 600;
             margin-top: 36px;
             margin-bottom: 16px;
-            color: #fff;
+            color: var(--text-main);
         }
 
         .wiki-content h3 {
@@ -588,7 +679,7 @@ function getTemplateHTML() {
             font-weight: 600;
             margin-top: 24px;
             margin-bottom: 12px;
-            color: #fff;
+            color: var(--text-main);
         }
 
         .wiki-content p {
@@ -606,12 +697,12 @@ function getTemplateHTML() {
         }
 
         .wiki-content li strong {
-            color: #fff;
+            color: var(--text-main);
         }
 
         .wiki-content code {
             font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
-            background-color: rgba(255, 255, 255, 0.05);
+            background-color: var(--glass-bg-hover);
             padding: 2px 6px;
             border-radius: 4px;
             font-size: 0.9em;
@@ -668,7 +759,7 @@ function getTemplateHTML() {
             display: block;
             margin: 24px auto;
             border-radius: 8px;
-            border: 1px solid rgba(255, 255, 255, 0.1);
+            border: 1px solid var(--glass-border);
             box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
         }
 
@@ -680,6 +771,79 @@ function getTemplateHTML() {
             margin-top: -16px;
             margin-bottom: 24px;
             font-style: italic;
+        }
+
+        /* Metadata Badges */
+        .metadata-badges {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-bottom: 24px;
+            margin-top: -8px;
+        }
+        .badge {
+            display: inline-block;
+            padding: 4px 10px;
+            border-radius: 12px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            letter-spacing: 0.05em;
+        }
+        .badge-status-default { background-color: var(--glass-border); color: var(--text-muted); }
+        .badge-status-draft { background-color: rgba(245, 158, 11, 0.15); color: #fbbf24; border: 1px solid rgba(245, 158, 11, 0.3); }
+        .badge-status-review { background-color: rgba(236, 72, 153, 0.15); color: #f472b6; border: 1px solid rgba(236, 72, 153, 0.3); }
+        .badge-status-completed { background-color: rgba(16, 185, 129, 0.15); color: #34d399; border: 1px solid rgba(16, 185, 129, 0.3); }
+        .badge-tag { background-color: rgba(59, 130, 246, 0.15); color: #60a5fa; border: 1px solid rgba(59, 130, 246, 0.3); }
+
+        /* Backlinks Styling */
+        .backlinks-section {
+            margin-top: 48px;
+            padding-top: 24px;
+            border-top: 2px dashed var(--border);
+            background-color: rgba(0, 0, 0, 0.2);
+            border-radius: 8px;
+            padding: 24px;
+        }
+        .backlinks-section details summary {
+            font-size: 1.1rem;
+            color: var(--accent-purple);
+            font-weight: 600;
+            cursor: pointer;
+            list-style: none;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            user-select: none;
+            transition: color 0.2s;
+        }
+        .backlinks-section details summary::-webkit-details-marker {
+            display: none;
+        }
+        .backlinks-section details summary::before {
+            content: "▶";
+            font-size: 0.8rem;
+            transition: transform 0.2s;
+            display: inline-block;
+            color: var(--text-muted);
+        }
+        .backlinks-section details[open] summary::before {
+            transform: rotate(90deg);
+        }
+        .backlinks-section details summary:hover {
+            color: var(--text-main);
+        }
+        .backlinks-list {
+            list-style: none !important;
+            padding-left: 0 !important;
+            margin-top: 16px;
+        }
+        .backlinks-list li {
+            margin-bottom: 8px !important;
+        }
+        .backlinks-list li::before {
+            content: "↳";
+            color: var(--text-muted);
+            margin-right: 8px;
         }
 
         /* Search Results Overlay */
@@ -702,18 +866,56 @@ function getTemplateHTML() {
             padding: 12px 16px;
             cursor: pointer;
             font-size: 0.9rem;
-            border-bottom: 1px solid rgba(255, 255, 255, 0.02);
+            border-bottom: 1px solid var(--glass-bg);
             transition: background var(--transition-speed);
         }
 
         .search-result-item:hover {
-            background-color: rgba(255, 255, 255, 0.03);
+            background-color: var(--glass-bg);
         }
 
         .search-result-item .path {
             font-size: 0.75rem;
             color: var(--text-muted);
             margin-top: 4px;
+        }
+
+        /* Top Search Wrapper for Main Content */
+        .top-search-wrapper {
+            position: relative;
+            margin-bottom: 40px;
+            width: 100%;
+        }
+        .top-search-wrapper .search-box {
+            margin-top: 0;
+        }
+        .top-search-wrapper .search-box input {
+            padding: 14px 16px 14px 44px;
+            font-size: 1.05rem;
+            border-radius: 12px;
+            background-color: var(--glass-bg);
+            border: 1px solid var(--glass-border-faint);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+        .top-search-wrapper .search-box input:focus {
+            background-color: var(--bg-card);
+            border-color: var(--accent-purple);
+            box-shadow: 0 0 0 2px rgba(168, 85, 247, 0.2);
+        }
+        .top-search-wrapper .search-box svg {
+            width: 20px;
+            height: 20px;
+            left: 14px;
+        }
+        .top-search-wrapper .search-results {
+            top: 56px;
+            left: 0;
+            right: 0;
+            width: 100%;
+            max-height: 50vh;
+            border-radius: 12px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.4);
+            border: 1px solid var(--glass-border);
         }
 
         /* Welcome Screen Styling */
@@ -745,7 +947,7 @@ function getTemplateHTML() {
         .welcome-card h3 {
             font-family: 'Outfit', sans-serif;
             margin-bottom: 8px;
-            color: #fff;
+            color: var(--text-main);
         }
 
         .welcome-card p {
@@ -802,14 +1004,16 @@ function getTemplateHTML() {
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M2 10v3a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1v-3a1 1 0 0 0-1-1H3a1 1 0 0 0-1 1z"/><path d="M22 10v3a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1v-3a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1z"/><path d="M12 2v20"/><path d="M6 12a6 6 0 0 1 12 0"/></svg>
                 Personal Wiki
             </a>
-            <button class="mobile-menu-btn" onclick="toggleMobileMenu()">
+            <div style="display: flex; gap: 8px; align-items: center;">
+                <button class="theme-toggle-btn" onclick="toggleTheme()" title="Toggle Light/Dark Mode" style="background: none; border: none; color: var(--text-muted); cursor: pointer; padding: 4px; display: flex; align-items: center; justify-content: center; transition: color var(--transition-speed);">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+                <button class="mobile-menu-btn" onclick="toggleMobileMenu()">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
             </button>
-            <div class="search-box">
-                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
-                <input type="text" id="searchInput" placeholder="개념 검색..." oninput="handleSearch(this.value)">
             </div>
-            <div class="search-results" id="searchResults"></div>
         </div>
 
         <nav class="sidebar-content" id="sidebarContent">
@@ -823,6 +1027,14 @@ function getTemplateHTML() {
     <!-- Main Content Panel -->
     <main>
         <div class="content-container">
+            <div class="top-search-wrapper">
+                <div class="search-box">
+                    <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
+                    <input type="text" id="searchInput" placeholder="위키 전체 문서 검색..." oninput="handleSearch(this.value)">
+                </div>
+                <div class="search-results" id="searchResults"></div>
+            </div>
+
             <article class="wiki-content" id="wikiContent">
                 <!-- Welcome/Home Page -->
                 <h1>🎧 하이파이 오디오, 프로덕션 & 자작 개인 위키 (HiFi Audio, Production & DIY Personal Wiki)</h1>
@@ -858,6 +1070,7 @@ function getTemplateHTML() {
         var wikiTree = /* WIKI_TREE_PLACEHOLDER */;
         var searchIndex = /* WIKI_SEARCH_PLACEHOLDER */;
         var wikiData = /* WIKI_DATA_PLACEHOLDER */;
+        var wikiBacklinks = /* WIKI_BACKLINKS_PLACEHOLDER */;
         
         var welcomeHTML = '';
 
@@ -960,6 +1173,7 @@ function getTemplateHTML() {
         }
 
         var koreanNames = {
+            '0_inbox': '📥 임시 보관함 (Inbox)',
             '1_hifi_audio': '🎧 하이파이 오디오 (HiFi Audio)',
             '2_recording_production': '🎙️ 레코딩 및 프로덕션 (Recording & Production)',
             '3_music_appreciation': '🎵 음악 감상 (Music Appreciation)',
@@ -1075,16 +1289,30 @@ function getTemplateHTML() {
 
             var term = query.toLowerCase();
             var matches = searchIndex.filter(function(item) {
-                return item.name.toLowerCase().indexOf(term) !== -1 || 
-                       item.path.toLowerCase().indexOf(term) !== -1;
+                var nameMatch = item.name.toLowerCase().indexOf(term) !== -1;
+                var pathMatch = item.path.toLowerCase().indexOf(term) !== -1;
+                var tagMatch = item.tags && item.tags.some(function(t) { return t.toLowerCase().indexOf(term) !== -1; });
+                return nameMatch || pathMatch || tagMatch;
             });
 
             if (matches.length > 0) {
                 resultsDiv.innerHTML = matches.map(function(match) {
                     var cleanPath = match.path.split('/')[0].replace(/^[0-9]+_/, '').replace(/_/g, ' ');
+                    
+                    var tagsHTML = '';
+                    if (match.tags && match.tags.length > 0) {
+                        tagsHTML = '<div style="margin-top: 4px;">' + match.tags.map(function(t) {
+                            var isMatch = t.toLowerCase().indexOf(term) !== -1;
+                            var color = isMatch ? '#60a5fa' : 'var(--text-muted)';
+                            var bg = isMatch ? 'rgba(59, 130, 246, 0.15)' : 'var(--glass-bg-hover)';
+                            return '<span style="display:inline-block; font-size:0.7rem; padding:2px 6px; border-radius:8px; background:'+bg+'; color:'+color+'; margin-right:4px;">#' + t + '</span>';
+                        }).join('') + '</div>';
+                    }
+
                     return '<div class="search-result-item" data-path="' + match.path + '">' +
-                        '<div style="font-weight: 500; color: #fff;">' + match.name + '</div>' +
+                        '<div style="font-weight: 500; color: var(--text-main);">' + match.name + '</div>' +
                         '<div class="path">' + cleanPath + '</div>' +
+                        tagsHTML +
                     '</div>';
                 }).join('');
                 resultsDiv.style.display = 'block';
@@ -1201,12 +1429,55 @@ function getTemplateHTML() {
             contentDiv.style.opacity = 0; // Fade out
 
             function displayMarkdown(markdown) {
-                // Strip YAML frontmatter from display
-                var cleanMarkdown = markdown.replace(new RegExp('^---[\\\\r\\\\n]+[\\\\s\\\\S]+?[\\\\r\\\\n]+---'), '');
+                // Parse YAML frontmatter
+                var yamlRegex = /^---\\r?\\n([\\s\\S]+?)\\r?\\n---/;
+                var match = markdown.match(yamlRegex);
+                var metadataHTML = '';
+                var cleanMarkdown = markdown;
+                
+                if (match) {
+                    cleanMarkdown = markdown.replace(yamlRegex, '');
+                    var yamlText = match[1];
+                    
+                    var statusMatch = yamlText.match(/status:\\s*['"]?([^'"\\r\\n]+)['"]?/);
+                    var tagsMatch = yamlText.match(/tags:\\s*\\[(.*?)\\]/);
+                    
+                    if (statusMatch || tagsMatch) {
+                        metadataHTML += '<div class="metadata-badges">';
+                        if (statusMatch) {
+                            var status = statusMatch[1].trim();
+                            var statusClass = 'badge-status-default';
+                            if (status === 'draft') statusClass = 'badge-status-draft';
+                            if (status === 'needs_review') statusClass = 'badge-status-review';
+                            if (status === 'completed') statusClass = 'badge-status-completed';
+                            
+                            var displayStatus = status.toUpperCase().replace('_', ' ');
+                            metadataHTML += '<span class="badge ' + statusClass + '">' + displayStatus + '</span>';
+                        }
+                        if (tagsMatch && tagsMatch[1].trim() !== '') {
+                            var tags = tagsMatch[1].split(',').map(function(t) { return t.trim().replace(/^['"]|['"]$/g, ''); });
+                            tags.forEach(function(tag) {
+                                if(tag) metadataHTML += '<span class="badge badge-tag">#' + tag + '</span>';
+                            });
+                        }
+                        metadataHTML += '</div>';
+                    }
+                }
 
                 setTimeout(function() {
                     // Render Markdown via marked
                     var renderedHTML = marked.parse(cleanMarkdown);
+                    
+                    // Inject metadata badges right after the first H1
+                    if (metadataHTML) {
+                        var h1Index = renderedHTML.indexOf('</h1>');
+                        if (h1Index !== -1) {
+                            renderedHTML = renderedHTML.substring(0, h1Index + 5) + metadataHTML + renderedHTML.substring(h1Index + 5);
+                        } else {
+                            renderedHTML = metadataHTML + renderedHTML;
+                        }
+                    }
+
                     contentDiv.innerHTML = '';
 
                     // Generate and prepend breadcrumbs
@@ -1218,6 +1489,30 @@ function getTemplateHTML() {
                     var bodyWrapper = document.createElement('div');
                     bodyWrapper.innerHTML = renderedHTML;
                     contentDiv.appendChild(bodyWrapper);
+
+                    // Add Backlinks Section
+                    if (typeof wikiBacklinks !== 'undefined' && wikiBacklinks[pagePath] && wikiBacklinks[pagePath].length > 0) {
+                        var blSection = document.createElement('div');
+                        blSection.className = 'backlinks-section';
+                        blSection.innerHTML = '<details><summary>🔗 Backlinks <span style="font-size:0.85rem; color:var(--text-muted); font-weight:normal;">(' + wikiBacklinks[pagePath].length + ')</span></summary><ul class="backlinks-list"></ul></details>';
+                        var ul = blSection.querySelector('ul');
+                        wikiBacklinks[pagePath].forEach(function(srcPath) {
+                            var node = searchIndex.find(function(i) { return i.path === srcPath; });
+                            var name = node ? node.name : srcPath.split('/').pop().replace('.md', '');
+                            var li = document.createElement('li');
+                            li.innerHTML = '<a href="#' + srcPath + '">' + name + '</a>';
+                            
+                            // Attach click event for internal routing
+                            var a = li.querySelector('a');
+                            a.addEventListener('click', function(e) {
+                                e.preventDefault();
+                                window.location.hash = srcPath;
+                            });
+                            
+                            ul.appendChild(li);
+                        });
+                        contentDiv.appendChild(blSection);
+                    }
 
                     contentDiv.style.opacity = 1; // Fade in
                     

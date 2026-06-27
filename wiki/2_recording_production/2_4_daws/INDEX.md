@@ -9,5 +9,5 @@ title_en: "DAWs"
 ---
 
 ## 📄 문서 목록
-* [Ableton Live](Ableton_Live.md)
+* [에이블톤 라이브 (Ableton Live)](Ableton_Live.md)
 

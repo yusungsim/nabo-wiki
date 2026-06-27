@@ -9,16 +9,16 @@ title_en: "Drivers & Materials"
 ---
 
 ## 📄 문서 목록
-* [Al Mg Dome](Al_Mg_Dome.md)
-* [Balanced Armature](Balanced_Armature.md)
-* [Bone Conduction](Bone_Conduction.md)
-* [DLC](DLC.md)
-* [Dual Magnetic Circuit](Dual_Magnetic_Circuit.md)
-* [Dynamic Driver](Dynamic_Driver.md)
-* [Electrostatic](Electrostatic.md)
-* [Glass Dome](Glass_Dome.md)
-* [MEMS](MEMS.md)
-* [Neodymium Magnet](Neodymium_Magnet.md)
-* [Piezoelectric](Piezoelectric.md)
-* [Planar Magnetic](Planar_Magnetic.md)
+* [알루미늄-마그네슘 (Al-Mg) 합금 돔](Al_Mg_Dome.md)
+* [밸런스드 아마추어 (Balanced Armature - BA)](Balanced_Armature.md)
+* [골전도 (Bone Conduction - BCD)](Bone_Conduction.md)
+* [DLC (Diamond-Like Carbon) 진동판](DLC.md)
+* [듀얼 마그네틱 회로 (Dual Magnetic Circuit)](Dual_Magnetic_Circuit.md)
+* [다이내믹 드라이버 (Dynamic Driver - DD)](Dynamic_Driver.md)
+* [정전형 (Electrostatic - EST)](Electrostatic.md)
+* [글라스 (유리) 돔](Glass_Dome.md)
+* [반도체 고체 상태 (MEMS)](MEMS.md)
+* [네오디뮴 마그넷 (Neodymium Magnet)](Neodymium_Magnet.md)
+* [피에조 전기 세라믹 (Piezoelectric - PZT)](Piezoelectric.md)
+* [평판형 자계 (Planar Magnetic)](Planar_Magnetic.md)
 

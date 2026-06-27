@@ -1,6 +1,8 @@
 ---
 title_ko: "32-bit Float"
 title_en: "부동소수점 오디오"
+status: "draft"
+tags: [디지털 포맷, HiFi]
 ---
 # 32-bit Float (부동소수점 오디오)
 

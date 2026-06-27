@@ -1,6 +1,8 @@
 ---
 title_ko: "락박스"
 title_en: "Rockbox"
+status: "draft"
+tags: [재생 앱, HiFi]
 ---
 # 락박스 (Rockbox)
 

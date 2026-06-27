@@ -9,5 +9,5 @@ title_en: "Modulars"
 ---
 
 ## 📄 문서 목록
-* [Drambo](Drambo.md)
+* [드람보 (Drambo)](Drambo.md)
 

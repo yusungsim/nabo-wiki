@@ -1,5 +1,7 @@
 ---
 title_ko: "ALBUMARTIST 태그 및 UAPP 앨범 그룹화 로직"
+status: "draft"
+tags: [디지털 포맷, HiFi]
 ---
 # ALBUMARTIST 태그 및 UAPP 앨범 그룹화 로직
 

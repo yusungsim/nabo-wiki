@@ -1,6 +1,8 @@
 ---
 title_ko: "개인 소장 명반선"
 title_en: "Favorite Albums"
+status: "draft"
+tags: [음악 리뷰, 음악감상]
 ---
 # 개인 소장 명반선 (Favorite Albums)
 

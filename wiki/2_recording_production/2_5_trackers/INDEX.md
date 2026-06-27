@@ -9,5 +9,5 @@ title_en: "Trackers"
 ---
 
 ## 📄 문서 목록
-* [Renoise](Renoise.md)
+* [리노이즈 (Renoise)](Renoise.md)
 

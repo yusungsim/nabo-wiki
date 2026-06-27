@@ -8,11 +8,14 @@ title_ko: "🎧 HiFi Audio, Production & DIY Personal Wiki"
 ---
 
 ## 🎯 바로가기
-* **[내 소유 음향 장비 목록 (My Audio Gear)](1_hifi_audio/%EB%82%B4%20%EC%86%8C%EC%9C%A0%20%EC%9D%8C%ED%96%A5%20%EC%9E%A5%EB%B9%84%20%28My%20Audio%20Gear%29.md)**: 현재 사용 중인 디바이스 매칭 및 튜닝 사양 요약 목록입니다.
+* **[🎧 내 소유 음향 장비 목록 (My Audio Gear)](1_hifi_audio/%EB%82%B4%20%EC%86%8C%EC%9C%A0%20%EC%9D%8C%ED%96%A5%20%EC%9E%A5%EB%B9%84%20%28My%20Audio%20Gear%29.md)**: 현재 사용 중인 디바이스 매칭 및 튜닝 사양 요약 목록입니다.
 
 ---
 
 ## 📂 대주제별 개념 인덱스 (Wiki Directory Map)
+
+### [📥 임시 보관함 (Inbox)](0_inbox/INDEX.md)
+* 아직 정식 분류되지 않은 아이디어 및 LLM 대화 초안
 
 ### [🎧 하이파이 오디오 (HiFi Audio)](1_hifi_audio/INDEX.md)
 * **[인이어 이어폰 (IEM)](1_hifi_audio/1_1_iem/INDEX.md)**

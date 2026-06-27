@@ -1,6 +1,8 @@
 ---
 title_ko: "NTLM 해시"
 title_en: "NTLM Hash"
+status: "draft"
+tags: [프로토콜, HiFi]
 ---
 # NTLM 해시 (NTLM Hash)
 

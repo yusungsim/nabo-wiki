@@ -1,6 +1,8 @@
 ---
 title_ko: "아카이 MPC 소프트웨어"
 title_en: "Akai MPC Software"
+status: "draft"
+tags: [샘플러(SW), 프로덕션]
 ---
 # 아카이 MPC 소프트웨어 (Akai MPC Software)
 

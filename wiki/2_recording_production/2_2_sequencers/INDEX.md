@@ -9,6 +9,6 @@ title_en: "Sequencers"
 ---
 
 ## 📄 문서 목록
-* [Elektron Digitakt II](Elektron_Digitakt_II.md)
-* [Teenage Engineering OP1](Teenage_Engineering_OP1.md)
+* [일렉트론 디지탁트 II (Elektron Digitakt II)](Elektron_Digitakt_II.md)
+* [틴에이지 엔지니어링 OP-1 (Teenage Engineering OP-1)](Teenage_Engineering_OP1.md)
 

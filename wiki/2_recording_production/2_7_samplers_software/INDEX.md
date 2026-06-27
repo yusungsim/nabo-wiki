@@ -9,6 +9,6 @@ title_en: "Samplers"
 ---
 
 ## 📄 문서 목록
-* [Akai MPC Software](Akai_MPC_Software.md)
-* [Koala Sampler](Koala_Sampler.md)
+* [아카이 MPC 소프트웨어 (Akai MPC Software)](Akai_MPC_Software.md)
+* [코알라 샘플러 (Koala Sampler)](Koala_Sampler.md)
 

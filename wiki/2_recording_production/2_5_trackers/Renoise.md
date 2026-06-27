@@ -1,6 +1,8 @@
 ---
 title_ko: "리노이즈"
 title_en: "Renoise"
+status: "draft"
+tags: [트래커, 프로덕션]
 ---
 # 리노이즈 (Renoise)
 

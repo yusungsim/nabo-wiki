@@ -1,6 +1,8 @@
 ---
 title_ko: "무손실 압축 포맷"
 title_en: "FLAC / ALAC"
+status: "draft"
+tags: [디지털 포맷, HiFi]
 ---
 # 무손실 압축 포맷 (FLAC / ALAC)
 

@@ -1,6 +1,8 @@
 ---
 title_ko: "사운드소스"
 title_en: "SoundSource"
+status: "draft"
+tags: [라우팅/EQ, 프로덕션]
 ---
 # 사운드소스 (SoundSource)
 

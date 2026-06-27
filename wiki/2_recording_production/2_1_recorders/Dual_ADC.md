@@ -1,6 +1,8 @@
 ---
 title_ko: "듀얼 ADC"
 title_en: "Dual ADC"
+status: "draft"
+tags: [레코더, 프로덕션]
 ---
 # 듀얼 ADC (Dual ADC)
 

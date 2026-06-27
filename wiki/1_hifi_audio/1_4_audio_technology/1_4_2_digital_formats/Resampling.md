@@ -1,6 +1,8 @@
 ---
 title_ko: "다운샘플링 & 리샘플링"
 title_en: "Downsampling / Resampling"
+status: "draft"
+tags: [디지털 포맷, HiFi]
 ---
 # 다운샘플링 & 리샘플링 (Downsampling / Resampling)
 

@@ -1,6 +1,8 @@
 ---
 title_ko: "클리핑"
 title_en: "Clipping"
+status: "draft"
+tags: [물리 음향, HiFi]
 ---
 # 클리핑 (Clipping)
 

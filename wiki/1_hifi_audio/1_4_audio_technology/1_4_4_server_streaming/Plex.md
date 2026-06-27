@@ -1,6 +1,8 @@
 ---
 title_ko: "플렉스"
 title_en: "Plex"
+status: "draft"
+tags: [서버/스트리밍, HiFi]
 ---
 # 플렉스 (Plex)
 

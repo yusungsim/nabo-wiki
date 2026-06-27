@@ -1,6 +1,8 @@
 ---
 title_ko: "메타데이터 태그 규격"
 title_en: "ID3 / Vorbis Comment"
+status: "draft"
+tags: [디지털 포맷, HiFi]
 ---
 # 메타데이터 태그 규격 (ID3 / Vorbis Comment)
 

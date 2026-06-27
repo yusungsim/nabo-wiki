@@ -1,6 +1,8 @@
 ---
 title_ko: "나비드롬"
 title_en: "Navidrome"
+status: "draft"
+tags: [서버/스트리밍, HiFi]
 ---
 # 나비드롬 (Navidrome)
 

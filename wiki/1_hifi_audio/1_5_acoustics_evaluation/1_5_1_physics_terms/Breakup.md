@@ -1,6 +1,8 @@
 ---
 title_ko: "분할 진동"
 title_en: "Breakup / Cone Breakup"
+status: "draft"
+tags: [물리 음향, HiFi]
 ---
 # 분할 진동 (Breakup / Cone Breakup)
 

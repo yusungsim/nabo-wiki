@@ -10,5 +10,5 @@ title_en: "Gear Care"
 
 ## 📄 문서 목록
 * [AlDente](AlDente.md)
-* [Verdigris Brass Cleaning](Verdigris_Brass_Cleaning.md)
+* [동록 / 녹청 (Verdigris)](Verdigris_Brass_Cleaning.md)
 

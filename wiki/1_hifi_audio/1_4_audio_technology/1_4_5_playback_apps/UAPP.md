@@ -1,6 +1,8 @@
 ---
 title_ko: "UAPP"
 title_en: "Universal Audio Player Pro"
+status: "draft"
+tags: [재생 앱, HiFi]
 ---
 # UAPP (Universal Audio Player Pro)
 

@@ -1,6 +1,8 @@
 ---
 title_ko: "IDM & 앰비언트 일렉트로닉 가이드"
 title_en: "IDM & Ambient"
+status: "draft"
+tags: [음악 리뷰, 음악감상]
 ---
 # IDM & 앰비언트 일렉트로닉 가이드 (IDM & Ambient)
 

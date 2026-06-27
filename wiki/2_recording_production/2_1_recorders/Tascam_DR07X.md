@@ -1,6 +1,8 @@
 ---
 title_ko: "타스캠 DR-07X / DR-07XP"
 title_en: "Tascam DR-07X / DR-07XP"
+status: "draft"
+tags: [레코더, 프로덕션]
 ---
 # 타스캠 DR-07X / DR-07XP (Tascam DR-07X / DR-07XP)
 

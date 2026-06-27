@@ -1,6 +1,8 @@
 ---
 title_ko: "코알라 샘플러"
 title_en: "Koala Sampler"
+status: "draft"
+tags: [샘플러(SW), 프로덕션]
 ---
 # 코알라 샘플러 (Koala Sampler)
 

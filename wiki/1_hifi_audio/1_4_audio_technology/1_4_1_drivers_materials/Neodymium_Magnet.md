@@ -1,6 +1,8 @@
 ---
 title_ko: "네오디뮴 마그넷"
 title_en: "Neodymium Magnet"
+status: "draft"
+tags: [드라이버/소재, HiFi]
 ---
 # 네오디뮴 마그넷 (Neodymium Magnet)
 

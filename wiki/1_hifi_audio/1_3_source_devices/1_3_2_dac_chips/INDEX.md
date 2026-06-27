@@ -9,7 +9,7 @@ title_en: "DAC Chips"
 ---
 
 ## 📄 문서 목록
-* [CS43198](CS43198.md)
-* [ES9038PRO](ES9038PRO.md)
-* [WM8758](WM8758.md)
+* [시러스 로직 CS43198 (Cirrus Logic CS43198)](CS43198.md)
+* [ESS Sabre 계열 (ES9016S / ES9026PRO / ES9038PRO)](ES9038PRO.md)
+* [울프슨 WM8758 (Wolfson WM8758)](WM8758.md)
 

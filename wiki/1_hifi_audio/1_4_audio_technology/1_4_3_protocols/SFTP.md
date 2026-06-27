@@ -1,6 +1,8 @@
 ---
 title_ko: "SFTP"
 title_en: "Secure File Transfer Protocol"
+status: "draft"
+tags: [프로토콜, HiFi]
 ---
 # SFTP (Secure File Transfer Protocol)
 
