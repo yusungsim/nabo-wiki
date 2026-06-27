@@ -109,7 +109,11 @@ function buildStaticWiki() {
     const searchIndex = getFlatPageList(tree);
     const pageContents = collectPageContents(WIKI_DIR);
 
-    const htmlContent = getTemplateHTML(tree, searchIndex, pageContents);
+    let htmlContent = getTemplateHTML();
+    htmlContent = htmlContent
+        .replace('/* WIKI_TREE_PLACEHOLDER */', JSON.stringify(tree))
+        .replace('/* WIKI_SEARCH_PLACEHOLDER */', JSON.stringify(searchIndex))
+        .replace('/* WIKI_DATA_PLACEHOLDER */', JSON.stringify(pageContents));
 
     fs.writeFileSync(OUTPUT_FILE, htmlContent, 'utf8');
     console.log(`==================================================`);
@@ -119,7 +123,7 @@ function buildStaticWiki() {
     console.log(`==================================================`);
 }
 
-function getTemplateHTML(tree, searchIndex, pageContents) {
+function getTemplateHTML() {
     return `<!DOCTYPE html>
 <html lang="ko">
 <head>
@@ -788,9 +792,9 @@ function getTemplateHTML(tree, searchIndex, pageContents) {
 
     <script>
         // Injected Static Database
-        var wikiTree = ${JSON.stringify(tree)};
-        var searchIndex = ${JSON.stringify(searchIndex)};
-        var wikiData = ${JSON.stringify(pageContents)};
+        var wikiTree = /* WIKI_TREE_PLACEHOLDER */;
+        var searchIndex = /* WIKI_SEARCH_PLACEHOLDER */;
+        var wikiData = /* WIKI_DATA_PLACEHOLDER */;
         
         var welcomeHTML = '';
 
