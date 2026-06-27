@@ -973,9 +973,7 @@
 
             function displayMarkdown(markdown) {
                 // Strip YAML frontmatter from display
-                var cleanMarkdown = markdown.replace(/^---?
-[sS]+??
----/, '');
+                var cleanMarkdown = markdown.replace(new RegExp('^---[\\r\\n]+[\\s\\S]+?[\\r\\n]+---'), '');
 
                 setTimeout(function() {
                     // Render Markdown via marked

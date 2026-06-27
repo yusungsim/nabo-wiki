@@ -1099,7 +1099,7 @@ function getTemplateHTML() {
 
             function displayMarkdown(markdown) {
                 // Strip YAML frontmatter from display
-                var cleanMarkdown = markdown.replace(/^---\r?\n[\s\S]+?\r?\n---/, '');
+                var cleanMarkdown = markdown.replace(new RegExp('^---[\\\\r\\\\n]+[\\\\s\\\\S]+?[\\\\r\\\\n]+---'), '');
 
                 setTimeout(function() {
                     // Render Markdown via marked
