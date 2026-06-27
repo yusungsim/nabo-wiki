@@ -191,6 +191,21 @@ function getTemplateHTML(tree, searchIndex, pageContents) {
             position: relative;
         }
 
+        .sidebar-resizer {
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            width: 4px;
+            cursor: col-resize;
+            z-index: 20;
+            transition: background-color 0.2s;
+        }
+        .sidebar-resizer:hover,
+        .sidebar-resizer.dragging {
+            background-color: var(--accent-purple);
+        }
+
         .sidebar-header {
             padding: 24px;
             border-bottom: 1px solid var(--border);
@@ -714,7 +729,7 @@ function getTemplateHTML(tree, searchIndex, pageContents) {
     <div class="ambient-glow"></div>
 
     <!-- Sidebar -->
-    <aside>
+    <aside id="sidebar">
         <div class="sidebar-header">
             <a href="#" class="logo" style="text-decoration: none; color: inherit; display: flex; align-items: center; gap: 8px;">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M2 10v3a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1v-3a1 1 0 0 0-1-1H3a1 1 0 0 0-1 1z"/><path d="M22 10v3a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1v-3a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1z"/><path d="M12 2v20"/><path d="M6 12a6 6 0 0 1 12 0"/></svg>
@@ -733,6 +748,9 @@ function getTemplateHTML(tree, searchIndex, pageContents) {
         <nav class="sidebar-content" id="sidebarContent">
             <!-- Dynamic Navigation Will Be Rendered Here -->
         </nav>
+        
+        <!-- Sidebar Resizer Drag Handle -->
+        <div class="sidebar-resizer" id="sidebarResizer"></div>
     </aside>
 
     <!-- Main Content Panel -->
@@ -808,6 +826,46 @@ function getTemplateHTML(tree, searchIndex, pageContents) {
 
             // Listen to browser Back/Forward navigation
             window.addEventListener('hashchange', routeHash);
+
+            // Sidebar Resizer Interaction
+            var sidebar = document.getElementById('sidebar');
+            var resizer = document.getElementById('sidebarResizer');
+            var isDragging = false;
+
+            // Load saved sidebar width from localStorage
+            var savedWidth = localStorage.getItem('sidebar-width');
+            if (savedWidth) {
+                document.documentElement.style.setProperty('--sidebar-width', savedWidth);
+            }
+
+            resizer.addEventListener('mousedown', function(e) {
+                isDragging = true;
+                resizer.classList.add('dragging');
+                document.body.style.cursor = 'col-resize';
+                document.body.style.userSelect = 'none'; // prevent text selection while dragging
+                e.preventDefault();
+            });
+
+            document.addEventListener('mousemove', function(e) {
+                if (!isDragging) return;
+                var newWidth = e.clientX;
+                // Min/Max boundaries
+                if (newWidth < 200) newWidth = 200;
+                if (newWidth > 600) newWidth = 600;
+                
+                var widthStr = newWidth + 'px';
+                document.documentElement.style.setProperty('--sidebar-width', widthStr);
+                localStorage.setItem('sidebar-width', widthStr);
+            });
+
+            document.addEventListener('mouseup', function() {
+                if (isDragging) {
+                    isDragging = false;
+                    resizer.classList.remove('dragging');
+                    document.body.style.cursor = '';
+                    document.body.style.userSelect = '';
+                }
+            });
         });
 
         // Router based on URL Hash
