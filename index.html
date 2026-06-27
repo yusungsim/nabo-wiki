@@ -708,42 +708,44 @@
             // Sidebar Resizer Interaction
             var sidebar = document.getElementById('sidebar');
             var resizer = document.getElementById('sidebarResizer');
-            var isDragging = false;
+            if (resizer) {
+                var isDragging = false;
 
-            // Load saved sidebar width from localStorage
-            var savedWidth = localStorage.getItem('sidebar-width');
-            if (savedWidth) {
-                document.documentElement.style.setProperty('--sidebar-width', savedWidth);
-            }
-
-            resizer.addEventListener('mousedown', function(e) {
-                isDragging = true;
-                resizer.classList.add('dragging');
-                document.body.style.cursor = 'col-resize';
-                document.body.style.userSelect = 'none'; // prevent text selection while dragging
-                e.preventDefault();
-            });
-
-            document.addEventListener('mousemove', function(e) {
-                if (!isDragging) return;
-                var newWidth = e.clientX;
-                // Min/Max boundaries
-                if (newWidth < 200) newWidth = 200;
-                if (newWidth > 600) newWidth = 600;
-                
-                var widthStr = newWidth + 'px';
-                document.documentElement.style.setProperty('--sidebar-width', widthStr);
-                localStorage.setItem('sidebar-width', widthStr);
-            });
-
-            document.addEventListener('mouseup', function() {
-                if (isDragging) {
-                    isDragging = false;
-                    resizer.classList.remove('dragging');
-                    document.body.style.cursor = '';
-                    document.body.style.userSelect = '';
+                // Load saved sidebar width from localStorage
+                var savedWidth = localStorage.getItem('sidebar-width');
+                if (savedWidth) {
+                    document.documentElement.style.setProperty('--sidebar-width', savedWidth);
                 }
-            });
+
+                resizer.addEventListener('mousedown', function(e) {
+                    isDragging = true;
+                    resizer.classList.add('dragging');
+                    document.body.style.cursor = 'col-resize';
+                    document.body.style.userSelect = 'none'; // prevent text selection while dragging
+                    e.preventDefault();
+                });
+
+                document.addEventListener('mousemove', function(e) {
+                    if (!isDragging) return;
+                    var newWidth = e.clientX;
+                    // Min/Max boundaries
+                    if (newWidth < 200) newWidth = 200;
+                    if (newWidth > 600) newWidth = 600;
+                    
+                    var widthStr = newWidth + 'px';
+                    document.documentElement.style.setProperty('--sidebar-width', widthStr);
+                    localStorage.setItem('sidebar-width', widthStr);
+                });
+
+                document.addEventListener('mouseup', function() {
+                    if (isDragging) {
+                        isDragging = false;
+                        resizer.classList.remove('dragging');
+                        document.body.style.cursor = '';
+                        document.body.style.userSelect = '';
+                    }
+                });
+            }
         });
 
         // Router based on URL Hash
