@@ -1,5 +1,6 @@
 ---
-title: "시퀀서 (Sequencers)"
+title_ko: "시퀀서"
+title_en: "Sequencers"
 ---
 # 시퀀서 (Sequencers)
 

@@ -1,5 +1,6 @@
 ---
-title: "SMB (Samba v2 & v3)"
+title_ko: "SMB"
+title_en: "Samba v2 & v3"
 ---
 # SMB (Samba v2 & v3)
 

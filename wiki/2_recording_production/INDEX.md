@@ -1,5 +1,6 @@
 ---
-title: "🎙️ 레코딩 및 프로덕션 (Recording & Production)"
+title_ko: "🎙️ 레코딩 및 프로덕션"
+title_en: "Recording & Production"
 ---
 # 🎙️ 레코딩 및 프로덕션 (Recording & Production)
 

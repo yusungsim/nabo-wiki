@@ -1,5 +1,6 @@
 ---
-title: "유지 보수 및 액세서리 (Maintenance & Accessories)"
+title_ko: "유지 보수 및 액세서리"
+title_en: "Maintenance & Accessories"
 ---
 # 유지 보수 및 액세서리 (Maintenance & Accessories)
 

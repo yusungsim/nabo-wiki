@@ -1,5 +1,6 @@
 ---
-title: "줌 H1essential / H1n (Zoom H1essential / H1n)"
+title_ko: "줌 H1essential / H1n"
+title_en: "Zoom H1essential / H1n"
 ---
 # 줌 H1essential / H1n (Zoom H1essential / H1n)
 

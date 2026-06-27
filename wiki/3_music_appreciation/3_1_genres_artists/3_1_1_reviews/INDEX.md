@@ -1,5 +1,6 @@
 ---
-title: "음악 리뷰 및 인덱스 (Reviews)"
+title_ko: "음악 리뷰 및 인덱스"
+title_en: "Reviews"
 ---
 # 음악 리뷰 및 인덱스 (Reviews)
 

@@ -1,5 +1,6 @@
 ---
-title: "피에조 전기 세라믹 (Piezoelectric - PZT)"
+title_ko: "피에조 전기 세라믹"
+title_en: "Piezoelectric - PZT"
 ---
 # 피에조 전기 세라믹 (Piezoelectric - PZT)
 

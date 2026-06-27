@@ -1,5 +1,6 @@
 ---
-title: "플렉스 (Plex)"
+title_ko: "플렉스"
+title_en: "Plex"
 ---
 # 플렉스 (Plex)
 

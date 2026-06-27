@@ -1,5 +1,6 @@
 ---
-title: "탕주 부두 (Tangzu Fudu Verse 1)"
+title_ko: "탕주 부두"
+title_en: "Tangzu Fudu Verse 1"
 ---
 # 탕주 부두 (Tangzu Fudu Verse 1)
 

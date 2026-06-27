@@ -1,5 +1,6 @@
 ---
-title: TRN 캐러벨 (TRN Caravel)
+title_ko: "TRN 캐러벨"
+title_en: "TRN Caravel"
 ---
 # TRN 캐러벨 (TRN Caravel)
 

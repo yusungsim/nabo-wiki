@@ -1,5 +1,6 @@
 ---
-title: "SRC (Sample Rate Conversion / 샘플 레이트 컨버터)"
+title_ko: "SRC"
+title_en: "Sample Rate Conversion / 샘플 레이트 컨버터"
 ---
 # SRC (Sample Rate Conversion / 샘플 레이트 컨버터)
 

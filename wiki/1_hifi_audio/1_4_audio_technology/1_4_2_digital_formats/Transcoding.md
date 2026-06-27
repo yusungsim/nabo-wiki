@@ -1,5 +1,6 @@
 ---
-title: "트랜스코딩 (Transcoding)"
+title_ko: "트랜스코딩"
+title_en: "Transcoding"
 ---
 # 트랜스코딩 (Transcoding)
 

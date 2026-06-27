@@ -1,5 +1,6 @@
 ---
-title: "드라이버 기술 및 진동판 소재 (Drivers & Materials)"
+title_ko: "드라이버 기술 및 진동판 소재"
+title_en: "Drivers & Materials"
 ---
 # 드라이버 기술 및 진동판 소재 (Drivers & Materials)
 

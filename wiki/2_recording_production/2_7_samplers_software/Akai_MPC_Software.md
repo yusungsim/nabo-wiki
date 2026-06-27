@@ -1,5 +1,6 @@
 ---
-title: "아카이 MPC 소프트웨어 (Akai MPC Software)"
+title_ko: "아카이 MPC 소프트웨어"
+title_en: "Akai MPC Software"
 ---
 # 아카이 MPC 소프트웨어 (Akai MPC Software)
 

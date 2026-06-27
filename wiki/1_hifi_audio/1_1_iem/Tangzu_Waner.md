@@ -1,5 +1,6 @@
 ---
-title: "탕주 상관완아 (Tangzu Wan'er S.G.)"
+title_ko: "탕주 상관완아"
+title_en: "Tangzu Wan'er S.G."
 ---
 # 탕주 상관완아 (Tangzu Wan'er S.G.)
 

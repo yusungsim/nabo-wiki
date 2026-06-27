@@ -1,5 +1,6 @@
 ---
-title: "무손실 압축 포맷 (FLAC / ALAC)"
+title_ko: "무손실 압축 포맷"
+title_en: "FLAC / ALAC"
 ---
 # 무손실 압축 포맷 (FLAC / ALAC)
 

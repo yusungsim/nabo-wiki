@@ -1,5 +1,5 @@
 ---
-title: "AlDente"
+title_ko: "AlDente"
 ---
 # AlDente
 

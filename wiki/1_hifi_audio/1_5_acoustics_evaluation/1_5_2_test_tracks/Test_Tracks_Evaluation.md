@@ -1,5 +1,6 @@
 ---
-title: "🎵 음질 평가용 테스트 트랙 및 음향 벤치마크 (Test Tracks & Acoustic Benchmarks)"
+title_ko: "🎵 음질 평가용 테스트 트랙 및 음향 벤치마크"
+title_en: "Test Tracks & Acoustic Benchmarks"
 ---
 # 🎵 음질 평가용 테스트 트랙 및 음향 벤치마크 (Test Tracks & Acoustic Benchmarks)
 

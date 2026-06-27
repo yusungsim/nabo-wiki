@@ -1,5 +1,6 @@
 ---
-title: "개인 음악 서버 및 스트리밍 (Server & Streaming)"
+title_ko: "개인 음악 서버 및 스트리밍"
+title_en: "Server & Streaming"
 ---
 # 개인 음악 서버 및 스트리밍 (Server & Streaming)
 

@@ -1,5 +1,6 @@
 ---
-title: "ESS Sabre 계열 (ES9016S / ES9026PRO / ES9038PRO)"
+title_ko: "ESS Sabre 계열"
+title_en: "ES9016S / ES9026PRO / ES9038PRO"
 ---
 # ESS Sabre 계열 (ES9016S / ES9026PRO / ES9038PRO)
 

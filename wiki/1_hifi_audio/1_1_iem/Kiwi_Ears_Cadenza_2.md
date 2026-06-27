@@ -1,5 +1,6 @@
 ---
-title: "키위이어스 카덴자 2 (Kiwi Ears Cadenza II)"
+title_ko: "키위이어스 카덴자 2"
+title_en: "Kiwi Ears Cadenza II"
 ---
 # 키위이어스 카덴자 2 (Kiwi Ears Cadenza II)
 

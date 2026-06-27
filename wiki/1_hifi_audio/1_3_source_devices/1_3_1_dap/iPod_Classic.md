@@ -1,5 +1,6 @@
 ---
-title: "아이팟 클래식 (iPod Classic / Video)"
+title_ko: "아이팟 클래식"
+title_en: "iPod Classic / Video"
 ---
 # 아이팟 클래식 (iPod Classic / Video)
 

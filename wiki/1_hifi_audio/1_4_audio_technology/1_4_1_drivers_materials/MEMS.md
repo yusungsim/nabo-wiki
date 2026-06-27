@@ -1,5 +1,6 @@
 ---
-title: "반도체 고체 상태 (MEMS)"
+title_ko: "반도체 고체 상태"
+title_en: "MEMS"
 ---
 # 반도체 고체 상태 (MEMS)
 

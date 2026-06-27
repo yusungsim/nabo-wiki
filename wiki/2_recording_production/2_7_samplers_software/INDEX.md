@@ -1,5 +1,6 @@
 ---
-title: "샘플러 (Samplers)"
+title_ko: "샘플러"
+title_en: "Samplers"
 ---
 # 샘플러 (Samplers)
 

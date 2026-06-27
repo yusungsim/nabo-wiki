@@ -1,5 +1,6 @@
 ---
-title: "전송 프로토콜 및 규격 (Protocols)"
+title_ko: "전송 프로토콜 및 규격"
+title_en: "Protocols"
 ---
 # 전송 프로토콜 및 규격 (Protocols)
 

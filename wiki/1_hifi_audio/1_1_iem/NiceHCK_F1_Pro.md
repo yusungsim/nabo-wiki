@@ -1,5 +1,6 @@
 ---
-title: "나이스에이치씨케이 F1 Pro (NiceHCK F1 Pro)"
+title_ko: "나이스에이치씨케이 F1 Pro"
+title_en: "NiceHCK F1 Pro"
 ---
 # 나이스에이치씨케이 F1 Pro (NiceHCK F1 Pro)
 

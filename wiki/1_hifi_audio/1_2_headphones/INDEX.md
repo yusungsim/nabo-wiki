@@ -1,5 +1,6 @@
 ---
-title: "헤드폰 (Headphones)"
+title_ko: "헤드폰"
+title_en: "Headphones"
 ---
 # 헤드폰 (Headphones)
 

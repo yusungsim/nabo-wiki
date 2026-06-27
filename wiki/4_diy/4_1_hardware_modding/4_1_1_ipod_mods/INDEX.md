@@ -1,5 +1,6 @@
 ---
-title: "아이팟 개조 가이드 (iPod Mods)"
+title_ko: "아이팟 개조 가이드"
+title_en: "iPod Mods"
 ---
 # 아이팟 개조 가이드 (iPod Mods)
 

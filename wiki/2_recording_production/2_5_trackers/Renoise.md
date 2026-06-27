@@ -1,5 +1,6 @@
 ---
-title: "리노이즈 (Renoise)"
+title_ko: "리노이즈"
+title_en: "Renoise"
 ---
 # 리노이즈 (Renoise)
 

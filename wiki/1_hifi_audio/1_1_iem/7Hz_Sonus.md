@@ -1,5 +1,6 @@
 ---
-title: "7Hz 소너스 (7Hz Sonus)"
+title_ko: "7Hz 소너스"
+title_en: "7Hz Sonus"
 ---
 # 7Hz 소너스 (7Hz Sonus)
 

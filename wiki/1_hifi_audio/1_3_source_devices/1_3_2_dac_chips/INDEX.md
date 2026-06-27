@@ -1,5 +1,6 @@
 ---
-title: "DAC 칩셋 (DAC Chips)"
+title_ko: "DAC 칩셋"
+title_en: "DAC Chips"
 ---
 # DAC 칩셋 (DAC Chips)
 

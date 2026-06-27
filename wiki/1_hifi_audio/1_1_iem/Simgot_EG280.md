@@ -1,5 +1,6 @@
 ---
-title: "심고트 EG280 (Simgot EG280)"
+title_ko: "심고트 EG280"
+title_en: "Simgot EG280"
 ---
 # 심고트 EG280 (Simgot EG280)
 

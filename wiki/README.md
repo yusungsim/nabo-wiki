@@ -1,5 +1,5 @@
 ---
-title: "🎧 HiFi Audio, Production & DIY Personal Wiki"
+title_ko: "🎧 HiFi Audio, Production & DIY Personal Wiki"
 ---
 # 🎧 HiFi Audio, Production & DIY Personal Wiki
 

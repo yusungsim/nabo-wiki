@@ -1,5 +1,6 @@
 ---
-title: "타스캠 DR-07X / DR-07XP (Tascam DR-07X / DR-07XP)"
+title_ko: "타스캠 DR-07X / DR-07XP"
+title_en: "Tascam DR-07X / DR-07XP"
 ---
 # 타스캠 DR-07X / DR-07XP (Tascam DR-07X / DR-07XP)
 

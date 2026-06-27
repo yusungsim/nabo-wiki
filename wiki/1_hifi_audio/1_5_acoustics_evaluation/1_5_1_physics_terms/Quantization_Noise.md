@@ -1,5 +1,6 @@
 ---
-title: "양자화 노이즈 (Quantization Noise)"
+title_ko: "양자화 노이즈"
+title_en: "Quantization Noise"
 ---
 # 양자화 노이즈 (Quantization Noise)
 

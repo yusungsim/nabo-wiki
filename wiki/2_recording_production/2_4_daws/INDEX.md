@@ -1,5 +1,6 @@
 ---
-title: "DAW (DAWs)"
+title_ko: "DAW"
+title_en: "DAWs"
 ---
 # DAW (DAWs)
 
@@ -9,5 +10,4 @@ title: "DAW (DAWs)"
 
 ## 📄 문서 목록
 * [Ableton Live](Ableton_Live.md)
-* [INDEX software](INDEX_software.md)
 

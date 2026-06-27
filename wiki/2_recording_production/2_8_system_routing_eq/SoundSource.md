@@ -1,5 +1,6 @@
 ---
-title: "사운드소스 (SoundSource)"
+title_ko: "사운드소스"
+title_en: "SoundSource"
 ---
 # 사운드소스 (SoundSource)
 

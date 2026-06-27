@@ -1,5 +1,6 @@
 ---
-title: "🛠️ 자작 (DIY)"
+title_ko: "🛠️ 자작"
+title_en: "DIY"
 ---
 # 🛠️ 자작 (DIY)
 

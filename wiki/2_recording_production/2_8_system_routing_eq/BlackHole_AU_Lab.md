@@ -1,5 +1,5 @@
 ---
-title: "BlackHole + AU Lab"
+title_ko: "BlackHole + AU Lab"
 ---
 # BlackHole + AU Lab
 

@@ -1,5 +1,6 @@
 ---
-title: "장비 관리 및 세척 가이드 (Gear Care)"
+title_ko: "장비 관리 및 세척 가이드"
+title_en: "Gear Care"
 ---
 # 장비 관리 및 세척 가이드 (Gear Care)
 

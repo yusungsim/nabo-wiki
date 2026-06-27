@@ -34,9 +34,23 @@ function getWikiTree(dir, relativeDir = '') {
                 const match = fileContent.match(frontmatterRegex);
                 if (match) {
                     const yamlContent = match[1];
+                    const koMatch = yamlContent.match(/title_ko:\s*(.+)/);
+                    const enMatch = yamlContent.match(/title_en:\s*(.+)/);
                     const titleMatch = yamlContent.match(/title:\s*(.+)/);
-                    if (titleMatch) {
-                        displayName = titleMatch[1].trim().replace(/^['"]|['"]$/g, '');
+                    
+                    let titleKo = koMatch ? koMatch[1].trim().replace(/^['"]|['"]$/g, '') : '';
+                    let titleEn = enMatch ? enMatch[1].trim().replace(/^['"]|['"]$/g, '') : '';
+                    
+                    if (!titleKo && titleMatch) {
+                        titleKo = titleMatch[1].trim().replace(/^['"]|['"]$/g, '');
+                    }
+
+                    if (titleKo && titleEn) {
+                        displayName = titleKo + ' (' + titleEn + ')';
+                    } else if (titleKo) {
+                        displayName = titleKo;
+                    } else if (titleEn) {
+                        displayName = titleEn;
                     }
                 }
             } catch (err) {
@@ -208,6 +222,55 @@ function getTemplateHTML() {
         .sidebar-resizer:hover,
         .sidebar-resizer.dragging {
             background-color: var(--accent-purple);
+        }
+
+        /* Breadcrumbs styling */
+        .breadcrumbs-container {
+            margin-bottom: 24px;
+            padding-bottom: 16px;
+            border-bottom: 1px solid var(--border);
+            font-size: 0.9rem;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+        .breadcrumbs-path {
+            color: var(--text-muted);
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 6px;
+        }
+        .breadcrumbs-path a {
+            color: var(--text-muted);
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+        .breadcrumbs-path a:hover {
+            color: var(--accent-purple);
+        }
+        .breadcrumbs-path .separator {
+            color: var(--border);
+            user-select: none;
+        }
+        .breadcrumbs-path .current-crumb {
+            color: var(--text-main);
+            font-weight: 500;
+        }
+        .back-to-parent {
+            margin-top: 4px;
+        }
+        .back-to-parent a {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            color: var(--accent-purple);
+            text-decoration: none;
+            font-weight: 600;
+            transition: opacity 0.2s;
+        }
+        .back-to-parent a:hover {
+            opacity: 0.8;
         }
 
         .sidebar-header {
@@ -1084,6 +1147,46 @@ function getTemplateHTML() {
             }
         }
 
+        // Generate Breadcrumbs & Parent Link
+        function generateBreadcrumbs(pagePath) {
+            var parts = pagePath.split('/');
+            if (parts.length <= 1 && (parts[0] === 'README.md' || parts[0] === '')) {
+                return null; // No breadcrumbs for home
+            }
+            
+            var container = document.createElement('div');
+            container.className = 'breadcrumbs-container';
+            
+            var breadcrumbs = [];
+            // Add Home link
+            breadcrumbs.push('<a href="#">홈</a>');
+            
+            var currentAccPath = '';
+            for (var i = 0; i < parts.length - 1; i++) {
+                var part = parts[i];
+                currentAccPath += (currentAccPath ? '/' : '') + part;
+                
+                // Folder display name resolution
+                var displayName = koreanNames[part] || part.replace(/^[0-9]+_/, '').replace(/_/g, ' ');
+                if (!koreanNames[part]) {
+                    displayName = displayName.charAt(0).toUpperCase() + displayName.slice(1);
+                }
+                
+                var folderIndexPath = currentAccPath + '/INDEX.md';
+                breadcrumbs.push('<a href="#' + folderIndexPath + '">' + displayName + '</a>');
+            }
+            
+            // Add current page (non-clickable)
+            var lastPart = parts[parts.length - 1];
+            if (lastPart !== 'INDEX.md' && lastPart !== 'README.md') {
+                var pageNode = searchIndex.find(function(item) { return item.path === pagePath; });
+                var currentPageName = pageNode ? pageNode.name : lastPart.replace('.md', '').replace(/_/g, ' ');
+                breadcrumbs.push('<span class="current-crumb">' + currentPageName + '</span>');
+            }
+            container.innerHTML = '<div class="breadcrumbs-path">' + breadcrumbs.join(' <span class="separator">/</span> ') + '</div>';
+            return container;
+        }
+
         // Render Markdown Page Content
         function loadPage(pagePath) {
             pagePath = decodeURIComponent(pagePath);
@@ -1103,7 +1206,19 @@ function getTemplateHTML() {
 
                 setTimeout(function() {
                     // Render Markdown via marked
-                    contentDiv.innerHTML = marked.parse(cleanMarkdown);
+                    var renderedHTML = marked.parse(cleanMarkdown);
+                    contentDiv.innerHTML = '';
+
+                    // Generate and prepend breadcrumbs
+                    var crumbs = generateBreadcrumbs(pagePath);
+                    if (crumbs) {
+                        contentDiv.appendChild(crumbs);
+                    }
+
+                    var bodyWrapper = document.createElement('div');
+                    bodyWrapper.innerHTML = renderedHTML;
+                    contentDiv.appendChild(bodyWrapper);
+
                     contentDiv.style.opacity = 1; // Fade in
                     
                     // Scroll to top

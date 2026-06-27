@@ -1,5 +1,5 @@
 ---
-title: "DLC (Diamond-Like Carbon) 진동판"
+title_ko: "DLC (Diamond-Like Carbon) 진동판"
 ---
 # DLC (Diamond-Like Carbon) 진동판
 

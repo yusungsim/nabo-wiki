@@ -1,5 +1,6 @@
 ---
-title: "UAPP (Universal Audio Player Pro)"
+title_ko: "UAPP"
+title_en: "Universal Audio Player Pro"
 ---
 # UAPP (Universal Audio Player Pro)
 

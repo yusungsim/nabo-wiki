@@ -1,5 +1,6 @@
 ---
-title: "다운샘플링 & 리샘플링 (Downsampling / Resampling)"
+title_ko: "다운샘플링 & 리샘플링"
+title_en: "Downsampling / Resampling"
 ---
 # 다운샘플링 & 리샘플링 (Downsampling / Resampling)
 

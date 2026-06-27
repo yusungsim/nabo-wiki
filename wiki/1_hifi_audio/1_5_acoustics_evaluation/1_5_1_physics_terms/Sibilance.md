@@ -1,5 +1,6 @@
 ---
-title: "치찰음 (Sibilance)"
+title_ko: "치찰음"
+title_en: "Sibilance"
 ---
 # 치찰음 (Sibilance)
 

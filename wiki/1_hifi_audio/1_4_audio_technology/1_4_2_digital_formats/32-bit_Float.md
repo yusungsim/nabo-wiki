@@ -1,5 +1,6 @@
 ---
-title: "32-bit Float (부동소수점 오디오)"
+title_ko: "32-bit Float"
+title_en: "부동소수점 오디오"
 ---
 # 32-bit Float (부동소수점 오디오)
 

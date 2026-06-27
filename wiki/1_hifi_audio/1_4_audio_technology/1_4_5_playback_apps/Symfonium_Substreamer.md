@@ -1,5 +1,5 @@
 ---
-title: "심포니엄 (Symfonium) / Substreamer"
+title_ko: "심포니엄 (Symfonium) / Substreamer"
 ---
 # 심포니엄 (Symfonium) / Substreamer
 

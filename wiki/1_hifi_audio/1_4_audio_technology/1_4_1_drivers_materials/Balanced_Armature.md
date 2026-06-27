@@ -1,5 +1,6 @@
 ---
-title: "밸런스드 아마추어 (Balanced Armature - BA)"
+title_ko: "밸런스드 아마추어"
+title_en: "Balanced Armature - BA"
 ---
 # 밸런스드 아마추어 (Balanced Armature - BA)
 

@@ -1,5 +1,6 @@
 ---
-title: "듀얼 마그네틱 회로 (Dual Magnetic Circuit)"
+title_ko: "듀얼 마그네틱 회로"
+title_en: "Dual Magnetic Circuit"
 ---
 # 듀얼 마그네틱 회로 (Dual Magnetic Circuit)
 

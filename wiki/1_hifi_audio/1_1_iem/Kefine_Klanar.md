@@ -1,5 +1,6 @@
 ---
-title: "케파인 클랜시 (Kefine Klanar)"
+title_ko: "케파인 클랜시"
+title_en: "Kefine Klanar"
 ---
 # 케파인 클랜시 (Kefine Klanar)
 

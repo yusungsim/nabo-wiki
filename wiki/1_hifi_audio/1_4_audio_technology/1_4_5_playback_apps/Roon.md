@@ -1,5 +1,6 @@
 ---
-title: "룬 (Roon)"
+title_ko: "룬"
+title_en: "Roon"
 ---
 # 룬 (Roon)
 

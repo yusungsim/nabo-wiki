@@ -1,5 +1,6 @@
 ---
-title: "디비누스 벨벳 팁 (Divinus Velvet Tips)"
+title_ko: "디비누스 벨벳 팁"
+title_en: "Divinus Velvet Tips"
 ---
 # 디비누스 벨벳 팁 (Divinus Velvet Tips)
 

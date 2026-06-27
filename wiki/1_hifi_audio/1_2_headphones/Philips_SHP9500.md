@@ -1,5 +1,6 @@
 ---
-title: "필립스 SHP9500 (Philips SHP9500)"
+title_ko: "필립스 SHP9500"
+title_en: "Philips SHP9500"
 ---
 # 필립스 SHP9500 (Philips SHP9500)
 

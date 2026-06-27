@@ -1,5 +1,6 @@
 ---
-title: "틴에이지 엔지니어링 OP-1 (Teenage Engineering OP-1)"
+title_ko: "틴에이지 엔지니어링 OP-1"
+title_en: "Teenage Engineering OP-1"
 ---
 # 틴에이지 엔지니어링 OP-1 (Teenage Engineering OP-1)
 

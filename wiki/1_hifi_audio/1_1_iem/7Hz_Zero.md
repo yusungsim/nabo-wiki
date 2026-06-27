@@ -1,5 +1,6 @@
 ---
-title: "7Hz 제로 / 제로 2 (7Hz Salnotes Zero / Zero 2)"
+title_ko: "7Hz 제로 / 제로 2"
+title_en: "7Hz Salnotes Zero / Zero 2"
 ---
 # 7Hz 제로 / 제로 2 (7Hz Salnotes Zero / Zero 2)
 

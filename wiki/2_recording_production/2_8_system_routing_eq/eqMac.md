@@ -1,5 +1,5 @@
 ---
-title: "eqMac"
+title_ko: "eqMac"
 ---
 # eqMac
 

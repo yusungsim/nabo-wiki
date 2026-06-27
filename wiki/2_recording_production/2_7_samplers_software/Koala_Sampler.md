@@ -1,5 +1,6 @@
 ---
-title: "코알라 샘플러 (Koala Sampler)"
+title_ko: "코알라 샘플러"
+title_en: "Koala Sampler"
 ---
 # 코알라 샘플러 (Koala Sampler)
 

@@ -1,5 +1,6 @@
 ---
-title: "NTLM 해시 (NTLM Hash)"
+title_ko: "NTLM 해시"
+title_en: "NTLM Hash"
 ---
 # NTLM 해시 (NTLM Hash)
 

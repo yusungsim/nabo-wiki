@@ -1,5 +1,6 @@
 ---
-title: "🎵 음악 감상 (Music Appreciation)"
+title_ko: "🎵 음악 감상"
+title_en: "Music Appreciation"
 ---
 # 🎵 음악 감상 (Music Appreciation)
 

@@ -1,5 +1,6 @@
 ---
-title: "골전도 (Bone Conduction - BCD)"
+title_ko: "골전도"
+title_en: "Bone Conduction - BCD"
 ---
 # 골전도 (Bone Conduction - BCD)
 

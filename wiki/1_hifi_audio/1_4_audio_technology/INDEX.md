@@ -1,5 +1,6 @@
 ---
-title: "오디오 기술 (Audio Technology)"
+title_ko: "오디오 기술"
+title_en: "Audio Technology"
 ---
 # 오디오 기술 (Audio Technology)
 
@@ -15,5 +16,4 @@ title: "오디오 기술 (Audio Technology)"
 * **[재생 소프트웨어 및 플레이어 앱 (Playback Apps)](1_4_5_playback_apps/INDEX.md)**
 
 ## 📄 문서 목록
-* [INDEX network audio](INDEX_network_audio.md)
 

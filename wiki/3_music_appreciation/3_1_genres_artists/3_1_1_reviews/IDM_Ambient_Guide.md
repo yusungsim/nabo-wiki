@@ -1,5 +1,6 @@
 ---
-title: "IDM & 앰비언트 일렉트로닉 가이드 (IDM & Ambient)"
+title_ko: "IDM & 앰비언트 일렉트로닉 가이드"
+title_en: "IDM & Ambient"
 ---
 # IDM & 앰비언트 일렉트로닉 가이드 (IDM & Ambient)
 

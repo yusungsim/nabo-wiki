@@ -1,5 +1,6 @@
 ---
-title: "DSD (Direct Stream Digital)"
+title_ko: "DSD"
+title_en: "Direct Stream Digital"
 ---
 # DSD (Direct Stream Digital)
 

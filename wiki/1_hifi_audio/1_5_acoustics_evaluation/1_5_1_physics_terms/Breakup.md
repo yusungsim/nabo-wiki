@@ -1,5 +1,6 @@
 ---
-title: "분할 진동 (Breakup / Cone Breakup)"
+title_ko: "분할 진동"
+title_en: "Breakup / Cone Breakup"
 ---
 # 분할 진동 (Breakup / Cone Breakup)
 

@@ -1,5 +1,6 @@
 ---
-title: "클라우드플레어 터널 (Cloudflare Tunnels)"
+title_ko: "클라우드플레어 터널"
+title_en: "Cloudflare Tunnels"
 ---
 # 클라우드플레어 터널 (Cloudflare Tunnels)
 

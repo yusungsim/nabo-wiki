@@ -1,5 +1,6 @@
 ---
-title: "롤랜드 SP-404MKII (Roland SP-404MKII)"
+title_ko: "롤랜드 SP-404MKII"
+title_en: "Roland SP-404MKII"
 ---
 # 롤랜드 SP-404MKII (Roland SP-404MKII)
 

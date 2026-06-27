@@ -1,5 +1,6 @@
 ---
-title: "마스킹 현상 (Masking Effect)"
+title_ko: "마스킹 현상"
+title_en: "Masking Effect"
 ---
 # 마스킹 현상 (Masking Effect)
 

@@ -36,9 +36,23 @@ function getWikiTree(dir, relativeDir = '') {
                 const match = fileContent.match(frontmatterRegex);
                 if (match) {
                     const yamlContent = match[1];
+                    const koMatch = yamlContent.match(/title_ko:\s*(.+)/);
+                    const enMatch = yamlContent.match(/title_en:\s*(.+)/);
                     const titleMatch = yamlContent.match(/title:\s*(.+)/);
-                    if (titleMatch) {
-                        displayName = titleMatch[1].trim().replace(/^['"]|['"]$/g, '');
+                    
+                    let titleKo = koMatch ? koMatch[1].trim().replace(/^['"]|['"]$/g, '') : '';
+                    let titleEn = enMatch ? enMatch[1].trim().replace(/^['"]|['"]$/g, '') : '';
+                    
+                    if (!titleKo && titleMatch) {
+                        titleKo = titleMatch[1].trim().replace(/^['"]|['"]$/g, '');
+                    }
+
+                    if (titleKo && titleEn) {
+                        displayName = titleKo + ' (' + titleEn + ')';
+                    } else if (titleKo) {
+                        displayName = titleKo;
+                    } else if (titleEn) {
+                        displayName = titleEn;
                     }
                 }
             } catch (err) {

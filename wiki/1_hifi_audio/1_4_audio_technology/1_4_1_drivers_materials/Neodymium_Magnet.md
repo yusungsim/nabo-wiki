@@ -1,5 +1,6 @@
 ---
-title: "네오디뮴 마그넷 (Neodymium Magnet)"
+title_ko: "네오디뮴 마그넷"
+title_en: "Neodymium Magnet"
 ---
 # 네오디뮴 마그넷 (Neodymium Magnet)
 

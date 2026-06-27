@@ -1,5 +1,6 @@
 ---
-title: "시스템 라우팅 및 EQ (System Routing & EQ)"
+title_ko: "시스템 라우팅 및 EQ"
+title_en: "System Routing & EQ"
 ---
 # 시스템 라우팅 및 EQ (System Routing & EQ)
 

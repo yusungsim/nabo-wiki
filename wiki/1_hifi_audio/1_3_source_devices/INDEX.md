@@ -1,5 +1,6 @@
 ---
-title: "재생 기기 (Playback Devices)"
+title_ko: "재생 기기"
+title_en: "Playback Devices"
 ---
 # 재생 기기 (Playback Devices)
 

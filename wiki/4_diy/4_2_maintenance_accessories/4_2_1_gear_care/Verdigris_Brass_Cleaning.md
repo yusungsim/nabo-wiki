@@ -1,5 +1,6 @@
 ---
-title: "동록 / 녹청 (Verdigris)"
+title_ko: "동록 / 녹청"
+title_en: "Verdigris"
 ---
 # 동록 / 녹청 (Verdigris)
 

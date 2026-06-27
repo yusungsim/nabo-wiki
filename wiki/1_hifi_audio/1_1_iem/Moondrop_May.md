@@ -1,5 +1,6 @@
 ---
-title: "수월우 메이 (Moondrop May)"
+title_ko: "수월우 메이"
+title_en: "Moondrop May"
 ---
 # 수월우 메이 (Moondrop May)
 

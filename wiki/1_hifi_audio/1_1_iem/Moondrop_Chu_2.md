@@ -1,5 +1,6 @@
 ---
-title: "수월우 츄 2 (Moondrop Chu II)"
+title_ko: "수월우 츄 2"
+title_en: "Moondrop Chu II"
 ---
 # 수월우 츄 2 (Moondrop Chu II)
 

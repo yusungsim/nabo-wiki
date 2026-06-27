@@ -1,5 +1,6 @@
 ---
-title: "iMod (아이모드 개조)"
+title_ko: "iMod"
+title_en: "아이모드 개조"
 ---
 # iMod (아이모드 개조)
 

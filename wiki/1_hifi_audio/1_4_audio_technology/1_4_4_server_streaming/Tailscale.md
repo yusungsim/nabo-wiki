@@ -1,5 +1,6 @@
 ---
-title: "테일스케일 (Tailscale)"
+title_ko: "테일스케일"
+title_en: "Tailscale"
 ---
 # 테일스케일 (Tailscale)
 

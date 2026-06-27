@@ -1,5 +1,5 @@
 ---
-title: "MOTU M2"
+title_ko: "MOTU M2"
 ---
 # MOTU M2
 

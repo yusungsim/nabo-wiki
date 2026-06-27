@@ -1,5 +1,6 @@
 ---
-title: "재생 소프트웨어 및 플레이어 앱 (Playback Apps)"
+title_ko: "재생 소프트웨어 및 플레이어 앱"
+title_en: "Playback Apps"
 ---
 # 재생 소프트웨어 및 플레이어 앱 (Playback Apps)
 

@@ -1,5 +1,6 @@
 ---
-title: "다이내믹 레인지 (Dynamic Range)"
+title_ko: "다이내믹 레인지"
+title_en: "Dynamic Range"
 ---
 # 다이내믹 레인지 (Dynamic Range)
 

@@ -1,5 +1,6 @@
 ---
-title: "USB Audio Class (UAC 2.0 / UAC 1.0)"
+title_ko: "USB Audio Class"
+title_en: "UAC 2.0 / UAC 1.0"
 ---
 # USB Audio Class (UAC 2.0 / UAC 1.0)
 

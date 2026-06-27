@@ -1,5 +1,6 @@
 ---
-title: "듀얼 ADC (Dual ADC)"
+title_ko: "듀얼 ADC"
+title_en: "Dual ADC"
 ---
 # 듀얼 ADC (Dual ADC)
 

@@ -1,5 +1,6 @@
 ---
-title: "평판형 자계 (Planar Magnetic)"
+title_ko: "평판형 자계"
+title_en: "Planar Magnetic"
 ---
 # 평판형 자계 (Planar Magnetic)
 

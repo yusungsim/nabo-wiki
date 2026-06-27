@@ -1,5 +1,6 @@
 ---
-title: "PCM (Pulse Code Modulation)"
+title_ko: "PCM"
+title_en: "Pulse Code Modulation"
 ---
 # PCM (Pulse Code Modulation)
 

@@ -1,5 +1,6 @@
 ---
-title: "모듈러 (Modulars)"
+title_ko: "모듈러"
+title_en: "Modulars"
 ---
 # 모듈러 (Modulars)
 

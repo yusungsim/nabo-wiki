@@ -1,5 +1,6 @@
 ---
-title: "스탁스 SRS-002 (Stax SRS-002)"
+title_ko: "스탁스 SRS-002"
+title_en: "Stax SRS-002"
 ---
 # 스탁스 SRS-002 (Stax SRS-002)
 

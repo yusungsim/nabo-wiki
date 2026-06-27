@@ -1,5 +1,6 @@
 ---
-title: "정전형 (Electrostatic - EST)"
+title_ko: "정전형"
+title_en: "Electrostatic - EST"
 ---
 # 정전형 (Electrostatic - EST)
 

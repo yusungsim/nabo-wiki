@@ -1,5 +1,6 @@
 ---
-title: "음향 피팅 및 액세서리 (Accessories)"
+title_ko: "음향 피팅 및 액세서리"
+title_en: "Accessories"
 ---
 # 음향 피팅 및 액세서리 (Accessories)
 

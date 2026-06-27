@@ -1,5 +1,6 @@
 ---
-title: "나비드롬 (Navidrome)"
+title_ko: "나비드롬"
+title_en: "Navidrome"
 ---
 # 나비드롬 (Navidrome)
 

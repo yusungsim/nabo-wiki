@@ -1,5 +1,6 @@
 ---
-title: "트래커 (Trackers)"
+title_ko: "트래커"
+title_en: "Trackers"
 ---
 # 트래커 (Trackers)
 

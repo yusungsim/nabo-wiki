@@ -1,5 +1,6 @@
 ---
-title: "인이어 이어폰 (IEM)"
+title_ko: "인이어 이어폰"
+title_en: "IEM"
 ---
 # 인이어 이어폰 (IEM)
 
@@ -10,7 +11,6 @@ title: "인이어 이어폰 (IEM)"
 ## 📄 문서 목록
 * [7Hz Sonus](7Hz_Sonus.md)
 * [7Hz Zero](7Hz_Zero.md)
-* [INDEX receivers](INDEX_receivers.md)
 * [Kefine Arnar](Kefine_Arnar.md)
 * [Kefine Klanar](Kefine_Klanar.md)
 * [Kiwi Ears Cadenza 2](Kiwi_Ears_Cadenza_2.md)

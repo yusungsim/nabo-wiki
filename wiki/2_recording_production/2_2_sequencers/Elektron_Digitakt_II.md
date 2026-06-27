@@ -1,5 +1,6 @@
 ---
-title: "일렉트론 디지탁트 II (Elektron Digitakt II)"
+title_ko: "일렉트론 디지탁트 II"
+title_en: "Elektron Digitakt II"
 ---
 # 일렉트론 디지탁트 II (Elektron Digitakt II)
 

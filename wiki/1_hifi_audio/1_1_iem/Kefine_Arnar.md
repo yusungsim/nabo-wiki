@@ -1,5 +1,6 @@
 ---
-title: "케파인 아르나르 (Kefine Arnar)"
+title_ko: "케파인 아르나르"
+title_en: "Kefine Arnar"
 ---
 # 케파인 아르나르 (Kefine Arnar)
 

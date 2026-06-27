@@ -1,5 +1,6 @@
 ---
-title: "슈어 KSE1500 / KSE1200 (Shure KSE1500 / KSE1200)"
+title_ko: "슈어 KSE1500 / KSE1200"
+title_en: "Shure KSE1500 / KSE1200"
 ---
 # 슈어 KSE1500 / KSE1200 (Shure KSE1500 / KSE1200)
 

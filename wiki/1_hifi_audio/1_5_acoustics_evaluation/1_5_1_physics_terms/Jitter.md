@@ -1,5 +1,6 @@
 ---
-title: "지터 (Jitter)"
+title_ko: "지터"
+title_en: "Jitter"
 ---
 # 지터 (Jitter)
 

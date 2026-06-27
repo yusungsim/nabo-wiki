@@ -1,5 +1,6 @@
 ---
-title: "개인 소장 명반선 (Favorite Albums)"
+title_ko: "개인 소장 명반선"
+title_en: "Favorite Albums"
 ---
 # 개인 소장 명반선 (Favorite Albums)
 

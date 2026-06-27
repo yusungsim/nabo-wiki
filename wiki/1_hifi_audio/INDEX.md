@@ -1,5 +1,6 @@
 ---
-title: "🎧 하이파이 오디오 (HiFi Audio)"
+title_ko: "🎧 하이파이 오디오"
+title_en: "HiFi Audio"
 ---
 # 🎧 하이파이 오디오 (HiFi Audio)
 

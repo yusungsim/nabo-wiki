@@ -1,5 +1,5 @@
 ---
-title: "ALBUMARTIST 태그 및 UAPP 앨범 그룹화 로직"
+title_ko: "ALBUMARTIST 태그 및 UAPP 앨범 그룹화 로직"
 ---
 # ALBUMARTIST 태그 및 UAPP 앨범 그룹화 로직
 

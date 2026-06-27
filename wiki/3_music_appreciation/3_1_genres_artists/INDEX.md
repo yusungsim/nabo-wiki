@@ -1,5 +1,6 @@
 ---
-title: "장르 및 아티스트 분석 (Genres & Artists)"
+title_ko: "장르 및 아티스트 분석"
+title_en: "Genres & Artists"
 ---
 # 장르 및 아티스트 분석 (Genres & Artists)
 

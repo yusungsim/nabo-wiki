@@ -1,5 +1,6 @@
 ---
-title: "락박스 (Rockbox)"
+title_ko: "락박스"
+title_en: "Rockbox"
 ---
 # 락박스 (Rockbox)
 

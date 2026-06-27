@@ -1,5 +1,6 @@
 ---
-title: "에이블톤 라이브 (Ableton Live)"
+title_ko: "에이블톤 라이브"
+title_en: "Ableton Live"
 ---
 # 에이블톤 라이브 (Ableton Live)
 

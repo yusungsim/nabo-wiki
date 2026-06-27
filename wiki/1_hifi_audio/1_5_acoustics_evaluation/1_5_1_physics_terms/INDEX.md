@@ -1,5 +1,6 @@
 ---
-title: "음향 물리 현상 용어 (Physics Terms)"
+title_ko: "음향 물리 현상 용어"
+title_en: "Physics Terms"
 ---
 # 음향 물리 현상 용어 (Physics Terms)
 

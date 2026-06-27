@@ -1,5 +1,6 @@
 ---
-title: "청음 평가용 테스트 트랙 (Test Tracks)"
+title_ko: "청음 평가용 테스트 트랙"
+title_en: "Test Tracks"
 ---
 # 청음 평가용 테스트 트랙 (Test Tracks)
 

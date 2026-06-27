@@ -1,5 +1,6 @@
 ---
-title: "앰페타민 (Amphetamine)"
+title_ko: "앰페타민"
+title_en: "Amphetamine"
 ---
 # 앰페타민 (Amphetamine)
 

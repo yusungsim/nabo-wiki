@@ -1,5 +1,6 @@
 ---
-title: "레코더 (Recorders)"
+title_ko: "레코더"
+title_en: "Recorders"
 ---
 # 레코더 (Recorders)
 
@@ -9,7 +10,6 @@ title: "레코더 (Recorders)"
 
 ## 📄 문서 목록
 * [Dual ADC](Dual_ADC.md)
-* [INDEX hardware](INDEX_hardware.md)
 * [Tascam DR05X](Tascam_DR05X.md)
 * [Tascam DR07X](Tascam_DR07X.md)
 * [Zoom H1essential](Zoom_H1essential.md)

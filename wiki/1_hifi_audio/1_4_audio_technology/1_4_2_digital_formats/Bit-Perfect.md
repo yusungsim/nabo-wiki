@@ -1,5 +1,6 @@
 ---
-title: "비트 퍼펙트 (Bit-Perfect)"
+title_ko: "비트 퍼펙트"
+title_en: "Bit-Perfect"
 ---
 # 비트 퍼펙트 (Bit-Perfect)
 

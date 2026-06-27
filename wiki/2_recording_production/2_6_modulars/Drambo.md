@@ -1,5 +1,6 @@
 ---
-title: "드람보 (Drambo)"
+title_ko: "드람보"
+title_en: "Drambo"
 ---
 # 드람보 (Drambo)
 

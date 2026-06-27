@@ -1,5 +1,6 @@
 ---
-title: "플렉스앰프 (Plexamp)"
+title_ko: "플렉스앰프"
+title_en: "Plexamp"
 ---
 # 플렉스앰프 (Plexamp)
 

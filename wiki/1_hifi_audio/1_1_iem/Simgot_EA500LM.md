@@ -1,5 +1,6 @@
 ---
-title: "심고트 EA500LM (Simgot EA500LM)"
+title_ko: "심고트 EA500LM"
+title_en: "Simgot EA500LM"
 ---
 # 심고트 EA500LM (Simgot EA500LM)
 

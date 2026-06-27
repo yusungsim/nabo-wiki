@@ -1,5 +1,6 @@
 ---
-title: "디지털 음원 포맷 및 데이터 (Digital Formats)"
+title_ko: "디지털 음원 포맷 및 데이터"
+title_en: "Digital Formats"
 ---
 # 디지털 음원 포맷 및 데이터 (Digital Formats)
 

@@ -1,5 +1,6 @@
 ---
-title: "롤랜드 AIRA Compact P-6 (Roland P-6)"
+title_ko: "롤랜드 AIRA Compact P-6"
+title_en: "Roland P-6"
 ---
 # 롤랜드 AIRA Compact P-6 (Roland P-6)
 

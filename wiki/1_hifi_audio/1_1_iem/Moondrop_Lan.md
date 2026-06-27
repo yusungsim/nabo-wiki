@@ -1,5 +1,6 @@
 ---
-title: "수월우 란 (Moondrop Lan)"
+title_ko: "수월우 란"
+title_en: "Moondrop Lan"
 ---
 # 수월우 란 (Moondrop Lan)
 

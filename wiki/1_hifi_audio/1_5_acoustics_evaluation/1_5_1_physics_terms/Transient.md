@@ -1,5 +1,6 @@
 ---
-title: "트랜지언트 (Transient / 과도 응답 및 어택감)"
+title_ko: "트랜지언트"
+title_en: "Transient / 과도 응답 및 어택감"
 ---
 # 트랜지언트 (Transient / 과도 응답 및 어택감)
 

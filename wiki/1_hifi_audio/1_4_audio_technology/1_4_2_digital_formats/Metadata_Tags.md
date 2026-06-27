@@ -1,5 +1,6 @@
 ---
-title: "메타데이터 태그 규격 (ID3 / Vorbis Comment)"
+title_ko: "메타데이터 태그 규격"
+title_en: "ID3 / Vorbis Comment"
 ---
 # 메타데이터 태그 규격 (ID3 / Vorbis Comment)
 

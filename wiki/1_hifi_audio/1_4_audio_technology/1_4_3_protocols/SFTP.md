@@ -1,5 +1,6 @@
 ---
-title: "SFTP (Secure File Transfer Protocol)"
+title_ko: "SFTP"
+title_en: "Secure File Transfer Protocol"
 ---
 # SFTP (Secure File Transfer Protocol)
 

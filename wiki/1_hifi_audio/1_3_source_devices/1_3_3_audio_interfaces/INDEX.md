@@ -1,5 +1,6 @@
 ---
-title: "오디오 인터페이스 (Audio Interfaces)"
+title_ko: "오디오 인터페이스"
+title_en: "Audio Interfaces"
 ---
 # 오디오 인터페이스 (Audio Interfaces)
 

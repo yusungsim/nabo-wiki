@@ -1,5 +1,6 @@
 ---
-title: "음향 이론 및 청음 평가 (Acoustics & Evaluation)"
+title_ko: "음향 이론 및 청음 평가"
+title_en: "Acoustics & Evaluation"
 ---
 # 음향 이론 및 청음 평가 (Acoustics & Evaluation)
 

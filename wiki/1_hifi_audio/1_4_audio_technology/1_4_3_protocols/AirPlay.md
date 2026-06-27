@@ -1,5 +1,6 @@
 ---
-title: "에어플레이 (AirPlay)"
+title_ko: "에어플레이"
+title_en: "AirPlay"
 ---
 # 에어플레이 (AirPlay)
 

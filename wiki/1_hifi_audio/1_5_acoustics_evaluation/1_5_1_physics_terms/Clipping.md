@@ -1,5 +1,6 @@
 ---
-title: "클리핑 (Clipping)"
+title_ko: "클리핑"
+title_en: "Clipping"
 ---
 # 클리핑 (Clipping)
 

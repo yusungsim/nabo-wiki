@@ -1,5 +1,6 @@
 ---
-title: "하드웨어 개조 (Hardware Modding)"
+title_ko: "하드웨어 개조"
+title_en: "Hardware Modding"
 ---
 # 하드웨어 개조 (Hardware Modding)
 

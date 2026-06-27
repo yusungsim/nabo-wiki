@@ -1,5 +1,6 @@
 ---
-title: "🎧 내 소유 음향 장비 목록 (My Audio Gear)"
+title_ko: "🎧 내 소유 음향 장비 목록"
+title_en: "My Audio Gear"
 ---
 # 🎧 내 소유 음향 장비 목록 (My Audio Gear)
 

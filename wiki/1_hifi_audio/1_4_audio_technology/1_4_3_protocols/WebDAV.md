@@ -1,5 +1,6 @@
 ---
-title: "WebDAV (Web Distributed Authoring and Versioning)"
+title_ko: "WebDAV"
+title_en: "Web Distributed Authoring and Versioning"
 ---
 # WebDAV (Web Distributed Authoring and Versioning)
 
